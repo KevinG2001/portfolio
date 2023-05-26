@@ -1,23 +1,27 @@
-import React from 'react'
+import React from 'react';
+import navStyles from '../Styling/navBar/navStyles.module.scss';
 
-function navbar() {
+function Navbar() {
   return (
-    <nav>
-        <div className='NavContainer'>
-            <h1 className='NavLogo'>Logo</h1>
-            <div>
-                <ul>
-                    <div className='NavHeaders'>
-                        Home
-                    </div>
-                    <div className='NavHeaders'>
-                        About Me
-                    </div>
+    <>
+        <nav className={navStyles.navContainer}>
+            <h1 className={navStyles.navLogo}>Logo</h1>
+            <div className={navStyles.navLinkWrapper}>
+                <ul className={navStyles.navUL}>
+                    <li className={navStyles.navLink}>
+                    Home
+                    </li>
+                    <li className={navStyles.navLink}>
+                    About Me
+                    </li>
+                    <li className={navStyles.navLink}>
+                        Contact Me
+                    </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-  )
+        </nav>
+    </>
+  );
 }
 
-export default navbar
+export default Navbar;
