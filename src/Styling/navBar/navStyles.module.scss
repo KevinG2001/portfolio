@@ -1,24 +1,30 @@
 .navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 10px 5px;
+  // background-color: black;
+
+  .navLogo {
+  }
+
+  .navLinkWrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  
-    .navLinkWrapper {
+
+    .navUL {
+      margin: 0;
+      padding: 0;
+
       display: flex;
-  
-      .navUL {
-        margin: 0;
+      flex-direction: row; //Changing the list from column to row direction
+      list-style-type: none; //Removing the dot from list Item
+
+      .navLink {
+        margin: 0 40px;
         padding: 0;
-
-        display: flex; 
-        flex-direction: row; //Changing the list from column to row direction
-        list-style-type: none; //Removing the dot from list Item
-
-        .navLink{
-            margin-right: 10%;
-        }
+        // color: white;
       }
     }
   }
-  
+}
