@@ -13,6 +13,9 @@ function Home() {
           <h1>Software Engineer</h1>
           <p>
             Hi, I'm Kevin Glennon a software engineer based in Dublin, Ireland.
+            I am a student currently studying in National College of Ireland, I
+            am gaining experience through college work and my own personal
+            projects.
           </p>
           <div className={homeStyles.imgContainer}>
             <a href="https://www.linkedin.com/in/kevin-glennon-98b511227/">
