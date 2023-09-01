@@ -1,6 +1,10 @@
 import React from "react";
 import Styles from "../Styling/navBar/navStyles.module.scss";
 import profilePic from "../assests/profilePic.jpeg";
+import linkdinPic from "../assests/linkedin.png";
+import githubPic from "../assests/GitHub-Mark.svg";
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <>
@@ -8,15 +12,21 @@ function Navbar() {
         <div className={Styles.navWrapper}>
           <div className={Styles.navTitleWrapper}>
             <img src={profilePic} alt="" className={Styles.profilePic} />
-            <div className={Styles.title}>Software Engineer</div>
+            <div className={Styles.title}><b>Kevin Glennon</b></div>
+            <div className={Styles.subTitle}>Software Engineer</div>
           </div>
           <div className={Styles.navList}>
-            <div className={Styles.navLink}>Home</div>
-            <div className={Styles.navLink}>About Me</div>
-            <div className={Styles.navLink}>Projects</div>
+            <Link to={"/"} className={Styles.navLink}>Home</Link>
+            <Link to={"/About"} className={Styles.navLink}>About Me</Link>
+            <Link to={"/Projects"} className={Styles.navLink}>Projects</Link>
           </div>
-          <div className={Styles.contactList}>
-            <div>Contact Me</div>
+          <div className={Styles.navList}>
+            <Link to={"/Contact"} className={Styles.navLink}>Contact Me</Link>
+            <Link to={"/CV"} className={Styles.navLink}>CV</Link>
+            <div className={Styles.contactSocials}>
+              <img src={linkdinPic} alt="Linkdin" className={Styles.imgTag}/>
+              <img src={githubPic} alt="Github" className={Styles.imgTag}/>
+            </div>
           </div>
         </div>
       </nav>

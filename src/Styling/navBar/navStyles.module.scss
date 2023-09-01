@@ -8,21 +8,59 @@
   align-items: center;
   flex-direction: column;
   background-color: $main-colour;
-}
+  color: $white-colour;
 
-.navWrapper {
+  .navWrapper {
   height: 100%;
-  width: 100%;
-  justify-content: center;
-}
-
-.profilePic {
-  background-color: blue;
-  border-radius: 50%;
-  width: 75%;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+
+    .navTitleWrapper{
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      font-size: 22px;
+      margin-top: 10%;
+      margin-bottom: 5%;
+      
+      .profilePic {
+        border-radius: 50%;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .navList {
+    width: 80%;
+    line-height: 30px;
+    margin: 5%;
+    flex-direction: column;
+    display: flex;
+
+    .navLink{
+      text-decoration: none;
+      color: $white-colour;
+    }
+
+    .contactSocials{
+    margin-top: 5%;
+
+    .imgTag{
+      width: 25px;
+      border-radius: 50px;
+      margin-right: 2%;
+    }
+  }
+  }
 }
 
-.navList {
-}
+
+
+
+
+
