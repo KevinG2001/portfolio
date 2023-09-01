@@ -1,18 +1,23 @@
 import React from "react";
-import navStyles from "../Styling/navBar/navStyles.module.scss";
-
+import Styles from "../Styling/navBar/navStyles.module.scss";
+import profilePic from "../assests/profilePic.jpeg";
 function Navbar() {
   return (
     <>
-      <nav className={navStyles.navContainer}>
-        <h1 className={navStyles.navLogo}>Logo</h1>
-        <div className={navStyles.navLinkWrapper}>
-          <ul className={navStyles.navUL}>
-            <li className={navStyles.navLink}>Home</li>
-            <li className={navStyles.navLink}>About Me</li>
-            <li className={navStyles.navLink}>Projects</li>
-            <li className={navStyles.navLink}>Contact Me</li>
-          </ul>
+      <nav className={Styles.navContainer}>
+        <div className={Styles.navWrapper}>
+          <div className={Styles.navTitleWrapper}>
+            <img src={profilePic} alt="" className={Styles.profilePic} />
+            <div className={Styles.title}>Software Engineer</div>
+          </div>
+          <div className={Styles.navList}>
+            <div className={Styles.navLink}>Home</div>
+            <div className={Styles.navLink}>About Me</div>
+            <div className={Styles.navLink}>Projects</div>
+          </div>
+          <div className={Styles.contactList}>
+            <div>Contact Me</div>
+          </div>
         </div>
       </nav>
     </>

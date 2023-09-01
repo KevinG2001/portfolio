@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      <div className={homeStyles.homeContainer}>
+      {/* <div className={homeStyles.homeContainer}>
         <div className={homeStyles.homeLeft}>
           <h1>Software Engineer</h1>
           <p>
@@ -37,7 +37,7 @@ function Home() {
         <div className={homeStyles.homeRight}>
           <div className={homeStyles.homeFaceImg}></div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
