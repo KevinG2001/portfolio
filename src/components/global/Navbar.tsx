@@ -1,8 +1,8 @@
 import React from "react";
-import Styles from "../Styling/navBar/navStyles.module.scss";
-import profilePic from "../assests/profilePic.jpeg";
-import linkdinPic from "../assests/linkedin.png";
-import githubPic from "../assests/GitHub-Mark.svg";
+import Styles from "../../Styling/global/navStyles.module.scss";
+import profilePic from "../../assests/profilePic.jpeg";
+import linkdinPic from "../../assests/linkedin.png";
+import githubPic from "../../assests/GitHub-Mark.svg";
 import { Link } from "react-router-dom";
 
 function Navbar() {

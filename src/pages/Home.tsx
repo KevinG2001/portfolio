@@ -1,6 +1,6 @@
 import React from "react";
 import homeStyles from "../Styling/homeStyles.module.scss";
-import Navbar from "./Navbar";
+import Navbar from "../components/global/Navbar";
 import LinkedInImg from "../assests/linkedin.png";
 import GithubImg from "../assests/GitHub-Mark.png";
 
