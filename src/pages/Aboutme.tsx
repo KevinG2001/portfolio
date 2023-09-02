@@ -1,4 +1,3 @@
-import React from "react";
 import Styles from "../Styling/pages/aboutStyles.module.scss";
 import reactLogo from "../assests/technologys/react.svg"
 import html5Logo from "../assests/technologys/html5.svg"

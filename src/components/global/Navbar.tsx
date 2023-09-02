@@ -1,4 +1,3 @@
-import React from "react";
 import Styles from "../../Styling/global/navStyles.module.scss";
 import profilePic from "../../assests/profilePic.jpeg";
 import linkdinPic from "../../assests/contact/linkedin.svg";
