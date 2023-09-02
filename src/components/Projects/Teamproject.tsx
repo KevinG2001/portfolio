@@ -7,11 +7,18 @@ function Teamproject() {
       <div className={Styles.container}>
         <img src="" alt="Img" className={Styles.projectImg} />
         <div className={Styles.descriptionWrapper}>
+          <h1 className={Styles.title}>Food and Drink Website</h1>
           <div className={Styles.paragraph}>
-            This is my first project, Its a hair salon made in React.
+            This is a project I made in college for a group project. It is a
+            drink website that recommends drinks depending on the users drinks.
           </div>
           <div className={Styles.paragraph}>
-            The frontend is made with React.js and it is styled using SASS
+            The frontend is made with React.js and TypeScript and styled with
+            SASS.
+          </div>
+          <div className={Styles.paragraph}>
+            We used Node.js and express.js to create our own REST API and we
+            hosted a MySQL database using Microsoft Azure.
           </div>
           <div className={Styles.btnWrapper}>
             <Link
