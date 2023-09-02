@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Styles from "../../../Styling/pages/projects.module.scss";
+import Styles from "../../Styling/pages/projects.module.scss";
 
 function HairsalonProject() {
   return (
@@ -19,7 +19,10 @@ function HairsalonProject() {
           >
             View Project
           </Link>
-          <Link to="" className={Styles.btn}>
+          <Link
+            to="https://github.com/KevinG2001/hairSalonWebsite"
+            className={Styles.btn}
+          >
             View Code
           </Link>{" "}
         </div>
