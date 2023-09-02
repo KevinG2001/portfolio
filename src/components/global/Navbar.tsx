@@ -1,8 +1,8 @@
 import React from "react";
 import Styles from "../../Styling/global/navStyles.module.scss";
 import profilePic from "../../assests/profilePic.jpeg";
-import linkdinPic from "../../assests/linkedin.png";
-import githubPic from "../../assests/GitHub-Mark.svg";
+import linkdinPic from "../../assests/contact/linkedin.svg";
+import githubPic from "../../assests/contact/github.svg";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -16,8 +16,7 @@ function Navbar() {
             <div className={Styles.subTitle}>Software Engineer</div>
           </div>
           <div className={Styles.navList}>
-            <Link to={"/"} className={Styles.navLink}>Home</Link>
-            <Link to={"/About"} className={Styles.navLink}>About Me</Link>
+            <Link to={"/"} className={Styles.navLink}>About Me</Link>
             <Link to={"/Projects"} className={Styles.navLink}>Projects</Link>
           </div>
           <div className={Styles.navList}>

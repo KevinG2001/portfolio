@@ -1,0 +1,28 @@
+@import "../global/default.module.scss";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 4%;
+    background-color: $main-colour;
+    color: white;
+}
+
+.paragraph{
+    background-color: $tertiary-colour;
+    border-radius: 15px;
+    padding: 5%;
+    font-size: 18px;
+}
+
+.skillImg{
+    margin: 1%;
+    width: 15%;
+}
+
+.skillImgWrapper{
+    background-color: $main-colour;
+    border-radius: 15px;
+    margin-top: 2%;
+}

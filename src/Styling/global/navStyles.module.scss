@@ -9,7 +9,6 @@
   flex-direction: column;
   background-color: $secondary-colour;
   color: $white-colour;
-
   .navWrapper {
   height: 100%;
   display: flex;
@@ -51,7 +50,7 @@
     margin-top: 5%;
 
     .imgTag{
-      width: 25px;
+      width: 10%;
       border-radius: 50px;
       margin-right: 2%;
     }
