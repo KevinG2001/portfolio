@@ -1,33 +1,34 @@
 @import "../global/default.module.scss";
 
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    padding: 4%;
-    background-color: $main-colour;
-    color: white;
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+  margin: 1% 5%;
+  background-color: $main-colour;
+  color: white;
 }
 
-.paragraph{
-    background-color: $tertiary-colour;
-    border-radius: 15px;
-    padding: 5%;
-    margin: 5% 0%;
-    font-size: 18px;
+.paragraph {
+  background-color: $tertiary-colour;
+  border-radius: 15px;
+  padding: 5%;
+  margin: 5% 0%;
+  //   font-size: 18px;
 }
 
-.skillImg{
-    margin: 1%;
-    width: 15%;
+.skillImg {
+  margin: 1%;
+  width: 12%;
 }
 
-.skillImgWrapper{
-    background-color: $main-colour;
-    border-radius: 15px;
-    margin-top: 2%;
+.skillImgWrapper {
+  background-color: $main-colour;
+  border-radius: 15px;
+  margin-top: 2%;
 }
 
-span{
-    color: $tertiary-colour;
+span {
+  color: $tertiary-colour;
 }
