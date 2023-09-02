@@ -1,9 +1,50 @@
-.container{
-    display: flex;
-    width: 100%;
-    height: 100%;
+@import "../../Styling/global/default.module.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 100%;
+  margin: 5%;
+  background-color: $tertiary-colour;
+  border-radius: 15px;
+  color: white;
 }
 
-.wrapper{
+.projectImg {
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
 
+.descriptionWrapper {
+  margin: 2%;
+  .paragraph {
+    margin: 5%;
+  }
+  .btnWrapper {
+    display: flex;
+    justify-content: space-evenly;
+
+    .btn {
+      cursor: pointer;
+      width: auto;
+      padding: 16px 32px;
+      color: $tertiary-colour;
+      background-color: $main-colour;
+      font-weight: bold;
+      text-decoration: none;
+      border: none;
+      border-radius: 15px;
+    }
+    .btn:hover {
+      color: $quaternary-colour;
+      box-shadow: 0px 0px 15px 3px $quaternary-colour;
+    }
+    .btn:visited {
+      color: $tertiary-colour;
+    }
+  }
 }

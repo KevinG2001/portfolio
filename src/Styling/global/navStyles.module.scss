@@ -10,12 +10,12 @@
   background-color: $secondary-colour;
   color: $white-colour;
   .navWrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .navTitleWrapper{
+    .navTitleWrapper {
       justify-content: center;
       align-items: center;
       width: 100%;
@@ -24,12 +24,15 @@
       font-size: 22px;
       margin-top: 10%;
       margin-bottom: 5%;
-      
+
       .profilePic {
         border-radius: 50%;
         width: 50%;
         justify-content: center;
         align-items: center;
+      }
+      .title {
+        font-weight: bold;
       }
     }
   }
@@ -41,25 +44,18 @@
     flex-direction: column;
     display: flex;
 
-    .navLink{
-      text-decoration: none;
-      color: $white-colour;
-    }
+    .contactSocials {
+      margin-top: 5%;
 
-    .contactSocials{
-    margin-top: 5%;
-
-    .imgTag{
-      width: 10%;
-      border-radius: 50px;
-      margin-right: 2%;
+      .imgTag {
+        width: 10%;
+        border-radius: 50px;
+        margin-right: 2%;
+      }
     }
   }
+  .navLink {
+    text-decoration: none;
+    color: $white-colour;
   }
 }
-
-
-
-
-
-
