@@ -14,7 +14,7 @@ function Home() {
     <>
       <div className={Styles.container}>
         <div className={Styles.aboutmeWrapper}>
-            <h1 className={Styles.title}><b>About Me</b></h1>
+            <h1 className={Styles.title}><b>About <span>Me</span></b></h1>
             <p className={Styles.paragraph}>
               Hello! My name is Kevin Glennon a software engineer based in Dublin, Ireland. 
               I enjoy making websites and random programs for some fun, This is were my interest in studying Computer Science came from and now here I am! 
@@ -25,7 +25,7 @@ function Home() {
             </p>
         </div>
         <div className={Styles.skillWrapper}>
-          <h1 className={Styles.title}>Skills</h1>
+          <h1 className={Styles.title}><span>My</span> Skills</h1>
           <p className={Styles.paragraph}>
             I have a good amount of skills in these fields and am atleast familiar with them and always looking to expand them!
             <div className={Styles.skillImgWrapper}>
