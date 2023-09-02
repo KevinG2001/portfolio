@@ -14,19 +14,19 @@ function Home() {
       <div className={Styles.container}>
         <div className={Styles.aboutmeWrapper}>
             <h1 className={Styles.title}><b>About <span>Me</span></b></h1>
-            <p className={Styles.paragraph}>
+            <div className={Styles.paragraph}>
               Hello! My name is Kevin Glennon a software engineer based in Dublin, Ireland. 
               I enjoy making websites and random programs for some fun, This is were my interest in studying Computer Science came from and now here I am! 
-            </p>
-
-            <p className={Styles.paragraph}>
-              Today I study at the National College of Ireland studying computer science. I am currently engaged in all aspects of the course including coursework, projects and collaborative projects with other students. I am happy to say I have a strong foundation in computer science principles and practical skills.
-            </p>
+            </div>
+            <div className={Styles.paragraph}>
+              Today I Attend at the National College of Ireland studying computer science. I am currently engaged in all aspects of the course including coursework, projects and collaborative projects with other students. 
+            </div>
         </div>
         <div className={Styles.skillWrapper}>
           <h1 className={Styles.title}><span>My</span> Skills</h1>
-          <p className={Styles.paragraph}>
-            I have a good amount of skills in these fields and am atleast familiar with them and always looking to expand them!
+          <div className={Styles.paragraph}>
+            I am happy to say I have a strong foundation in computer science principles and practical skills
+            and have a good amount of skills in in this field and I am atleast familiar with them and always looking to expand them!
             <div className={Styles.skillImgWrapper}>
             
             <img src={html5Logo} alt="" className={Styles.skillImg}/>
@@ -37,8 +37,7 @@ function Home() {
             <img src={mySQLLogo} alt="" className={Styles.skillImg}/>
             <img src={javaLogo} alt="" className={Styles.skillImg}/>
           </div>
-          </p>
-          
+          </div>
         </div>
       </div>
     </>
