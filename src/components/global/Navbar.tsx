@@ -22,8 +22,12 @@ function Navbar() {
             <Link to={"/Contact"} className={Styles.navLink}>Contact Me</Link>
             <Link to={"/CV"} className={Styles.navLink}>CV</Link>
             <div className={Styles.contactSocials}>
-              <img src={linkdinPic} alt="Linkdin" className={Styles.imgTag}/>
-              <img src={githubPic} alt="Github" className={Styles.imgTag}/>
+              <Link to={"https://www.linkedin.com/in/kevin-glennon-98b511227/"} target="_blank" rel="noopener noreferrer">
+                <img src={linkdinPic} alt="Linkdin" className={Styles.imgTag}/>
+              </Link>
+              <Link to={"https://github.com/KevinG2001?tab=repositories"} target="_blank" rel="noopener noreferrer">
+                <img src={githubPic} alt="Github" className={Styles.imgTag}/>
+              </Link>
             </div>
           </div>
         </div>
