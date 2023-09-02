@@ -2,31 +2,69 @@ import Styles from "../../Styling/global/navStyles.module.scss";
 import profilePic from "../../assests/profilePic.jpeg";
 import linkdinPic from "../../assests/contact/linkedin.svg";
 import githubPic from "../../assests/contact/github.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function Navbar() {
+  const [activePage, setActivePage] = useState("");
+  const location = useLocation();
+
+  useEffect(() => {
+    const currentPath = location.pathname;
+    setActivePage(currentPath);
+  }, [location]);
+
   return (
     <>
       <nav className={Styles.navContainer}>
         <div className={Styles.navWrapper}>
           <div className={Styles.navTitleWrapper}>
             <img src={profilePic} alt="" className={Styles.profilePic} />
-            <div className={Styles.title}><b>Kevin Glennon</b></div>
+            <div className={Styles.title}>Kevin Glennon</div>
             <div className={Styles.subTitle}>Software Engineer</div>
           </div>
           <div className={Styles.navList}>
-            <Link to={"/"} className={Styles.navLink}>About Me</Link>
-            <Link to={"/Projects"} className={Styles.navLink}>Projects</Link>
+            <Link
+              to={"/"}
+              className={Styles.navLink + (activePage === "/" ? " active" : "")}
+            >
+              About Me {activePage === "/" && ">"}
+            </Link>
+            <Link
+              to={"/Projects"}
+              className={
+                Styles.navLink + (activePage === "/Projects" ? " active" : "")
+              }
+            >
+              Projects {activePage === "/Projects" && ">"}
+            </Link>
           </div>
           <div className={Styles.navList}>
-            <Link to={"/Contact"} className={Styles.navLink}>Contact Me</Link>
-            <Link to={"/CV"} className={Styles.navLink}>CV</Link>
+            <Link
+              to={"/Contact"}
+              className={
+                Styles.navLink + (activePage === "/Contact" ? " active" : "")
+              }
+            >
+              Contact Me {activePage === "/Contact" && ">"}
+            </Link>
+            <Link to={"/CV"} className={Styles.navLink}>
+              CV
+            </Link>
             <div className={Styles.contactSocials}>
-              <Link to={"https://www.linkedin.com/in/kevin-glennon-98b511227/"} target="_blank" rel="noopener noreferrer">
-                <img src={linkdinPic} alt="Linkdin" className={Styles.imgTag}/>
+              <Link
+                to={"https://www.linkedin.com/in/kevin-glennon-98b511227/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={linkdinPic} alt="Linkdin" className={Styles.imgTag} />
               </Link>
-              <Link to={"https://github.com/KevinG2001?tab=repositories"} target="_blank" rel="noopener noreferrer">
-                <img src={githubPic} alt="Github" className={Styles.imgTag}/>
+              <Link
+                to={"https://github.com/KevinG2001?tab=repositories"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={githubPic} alt="Github" className={Styles.imgTag} />
               </Link>
             </div>
           </div>
