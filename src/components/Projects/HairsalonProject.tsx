@@ -6,6 +6,7 @@ function HairsalonProject() {
     <div className={Styles.container}>
       <img src="" alt="Img" className={Styles.projectImg} />
       <div className={Styles.descriptionWrapper}>
+        <h1 className={Styles.title}>Hair Salon Website</h1>
         <div className={Styles.paragraph}>
           This is my first project, Its a hair salon made in React.
         </div>

@@ -21,18 +21,9 @@ function Teamproject() {
             hosted a MySQL database using Microsoft Azure.
           </div>
           <div className={Styles.btnWrapper}>
-            <Link
-              to="https://mango-bush-027b92c03.3.azurestaticapps.net/"
-              className={Styles.btn}
-            >
-              View Project
+            <Link to="" className={Styles.btn}>
+              View Code (Link needed)
             </Link>
-            <Link
-              to="https://github.com/KevinG2001/hairSalonWebsite"
-              className={Styles.btn}
-            >
-              View Code
-            </Link>{" "}
           </div>
         </div>
       </div>
