@@ -17,28 +17,28 @@ function ContactMe() {
         >
           <div className={Styles.lineSeperator}>
             <div className={Styles.inputGroup}>
-              <input id="username" placeholder="" />
-              <label htmlFor="username">Username</label>
+              <input id="firstname" placeholder="" />
+              <label htmlFor="firstname">firstname</label>
             </div>
             <div className={Styles.inputGroup}>
-              <input id="password" type="password" placeholder="" />
-              <label htmlFor="password">Password</label>
+              <input id="surname" type="password" placeholder="" />
+              <label>Surname</label>
             </div>
           </div>
           <div className={Styles.lineSeperator}>
             <div className={Styles.inputGroup}>
-              <input id="username" placeholder="" />
-              <label htmlFor="username">Username</label>
+              <input id="email" placeholder="" />
+              <label htmlFor="email">Email</label>
             </div>
             <div className={Styles.inputGroup}>
-              <input id="password" type="password" placeholder="" />
-              <label htmlFor="password">Password</label>
+              <input id="subject" type="password" placeholder="" />
+              <label htmlFor="subject">subject</label>
             </div>
           </div>
           <div className={Styles.lineSeperator}>
             <div className={Styles.inputGroup}>
               <textarea id="message" />
-              <label htmlFor="message"></label>
+              <label htmlFor="message">Message</label>
             </div>
           </div>
         </form>

@@ -11,9 +11,9 @@
 }
 
 .contactForm {
-  margin: 80px auto;
+  // margin: 80px auto;
   display: flex;
-  max-width: 750px;
+  max-width: 500px;
   width: 100%;
   height: 500px;
   background-color: $tertiary-colour;
@@ -24,39 +24,43 @@
 .lineSeperator {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 .inputGroup {
   position: relative;
-  --x: 15px;
-  --y: 4px;
+  justify-content: space-evenly;
+  --x: 16px;
+  --y: 20px;
 }
 
 input {
   border: 1px solid black;
   width: 100%;
   padding: 3%;
-  margin: 10%;
   height: auto;
 }
 
 label {
   position: absolute;
   color: black;
-  // background-color: transparent;
+  background-color: white;
   left: var(--x);
   top: var(--y);
   border: 1px solid white;
-  padding: 0 6px;
 }
 
 input:focus ~ label {
-  top: calc(var(--y) * -2);
+  top: calc(var(--y) * -0.1);
   font-size: 14px;
   // color: green;
   background-color: $tertiary-colour;
   border: none;
 }
 
+textarea {
+  width: 400px;
+  height: 250px;
+}
 //This code works
 // .container {
 //   width: 40%;
