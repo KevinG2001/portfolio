@@ -19,6 +19,7 @@
   background-color: $tertiary-colour;
   justify-content: space-evenly;
   flex-direction: column;
+  border-radius: 15px;
 }
 
 .lineSeperator {
@@ -30,31 +31,38 @@
   position: relative;
   justify-content: space-evenly;
   --x: 16px;
-  --y: 20px;
+  --y: 4px;
 }
 
 input {
-  border: 1px solid black;
+  outline: none;
+  border: none;
   width: 100%;
   padding: 3%;
   height: auto;
+  background-color: $tertiary-colour;
+  border: 2px solid $main-colour;
+  border-radius: 25px;
 }
 
 label {
   position: absolute;
   color: black;
-  background-color: white;
   left: var(--x);
   top: var(--y);
   border: 1px solid white;
+  background-color: transparent;
+  border: none;
+  transition: top 300ms, border-color 300ms;
 }
 
 input:focus ~ label {
-  top: calc(var(--y) * -0.1);
+  top: calc(var(--y) * -1.5);
   font-size: 14px;
-  // color: green;
   background-color: $tertiary-colour;
-  border: none;
+  border-left: 2px solid $main-colour;
+  border-right: 2px solid $main-colour;
+  transition: t;
 }
 
 textarea {
