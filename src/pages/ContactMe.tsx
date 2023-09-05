@@ -18,7 +18,7 @@ function ContactMe() {
           <div className={Styles.lineSeperator}>
             <div className={Styles.inputGroup}>
               <input id="firstname" placeholder="" />
-              <label htmlFor="firstname">Firstname</label>
+              <label htmlFor="firstname"> Firstname </label>
             </div>
             <div className={Styles.inputGroup}>
               <input id="surname" placeholder="" />
@@ -28,17 +28,17 @@ function ContactMe() {
           <div className={Styles.lineSeperator}>
             <div className={Styles.inputGroup}>
               <input id="email" placeholder="" />
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email"> Email </label>
             </div>
             <div className={Styles.inputGroup}>
               <input id="subject" placeholder="" />
-              <label htmlFor="subject">Subject</label>
+              <label htmlFor="subject"> Subject </label>
             </div>
           </div>
           <div className={Styles.lineSeperator}>
             <div className={Styles.inputGroup}>
               <textarea id="message" />
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message"> Message </label>
             </div>
           </div>
         </form>

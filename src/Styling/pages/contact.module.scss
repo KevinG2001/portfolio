@@ -36,13 +36,12 @@
 
 input {
   outline: none;
-  border: none;
   width: 100%;
   padding: 3%;
   height: auto;
   background-color: $tertiary-colour;
   border: 2px solid $main-colour;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 label {
@@ -53,22 +52,39 @@ label {
   border: 1px solid white;
   background-color: transparent;
   border: none;
-  transition: top 300ms, border-color 300ms;
 }
 
 input:focus ~ label {
-  top: calc(var(--y) * -1.5);
+  top: calc(var(--y) * -2);
   font-size: 14px;
   background-color: $tertiary-colour;
   border-left: 2px solid $main-colour;
   border-right: 2px solid $main-colour;
-  transition: t;
+  transition: top 300ms, border-color 300ms;
 }
 
 textarea {
   width: 400px;
   height: 250px;
 }
+
+textarea {
+  padding-left: 20px 20px 0px 0px;
+  outline: none;
+  border: 2px solid $main-colour;
+  background-color: $tertiary-colour;
+  border-radius: 15px;
+}
+
+textarea:focus ~ label {
+  top: calc(var(--y) * -1.5);
+  font-size: 14px;
+  background-color: $tertiary-colour;
+  border-left: 2px solid $main-colour;
+  border-right: 2px solid $main-colour;
+  transition: top 300ms, border-color 300ms;
+}
+
 //This code works
 // .container {
 //   width: 40%;
