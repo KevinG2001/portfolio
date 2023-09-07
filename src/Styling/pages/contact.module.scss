@@ -54,7 +54,8 @@ label {
   border: none;
 }
 
-input:focus ~ label {
+input:focus ~ label,
+input:valid ~ label {
   top: calc(var(--y) * -2);
   font-size: 14px;
   background-color: $tertiary-colour;
