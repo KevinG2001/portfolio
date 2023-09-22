@@ -12,7 +12,7 @@
   flex-direction: row;
   width: 60%;
   height: auto;
-  margin: 5%;
+  margin: 2% 2% 0% 2%;
   background-color: $tertiary-colour;
   border-radius: 15px;
   color: white;
@@ -27,10 +27,11 @@
 }
 
 .descriptionWrapper {
-  margin: 2%;
+  margin: 1%;
   width: 75%;
   font-size: 1.2rem;
   .title {
+    margin: 0px;
     text-align: center;
     border-bottom: 2px solid $main-colour;
   }
