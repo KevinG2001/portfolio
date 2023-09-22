@@ -46,6 +46,7 @@ input {
 
 label {
   position: absolute;
+  padding: 0% 2%;
   color: black;
   left: var(--x);
   top: var(--y);
@@ -54,8 +55,9 @@ label {
   border: none;
 }
 
-input:focus ~ label {
-  top: calc(var(--y) * -2);
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: calc(var(--y) * -2.5);
   font-size: 14px;
   background-color: $tertiary-colour;
   border-left: 2px solid $main-colour;
