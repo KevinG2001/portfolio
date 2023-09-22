@@ -4,6 +4,7 @@ import linkdinPic from "../../assests/contact/linkedin.svg";
 import githubPic from "../../assests/contact/github.svg";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import cv from "../../assests/CV_2023.pdf";
 
 function Navbar() {
   const [activePage, setActivePage] = useState("");
@@ -48,9 +49,14 @@ function Navbar() {
             >
               Contact Me {activePage === "/Contact" && ">"}
             </Link>
-            <Link to={"/CV"} className={Styles.navLink}>
+            <a
+              href={cv}
+              className={Styles.navLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               CV
-            </Link>
+            </a>
             <div className={Styles.contactSocials}>
               <Link
                 to={"https://www.linkedin.com/in/kevin-glennon-98b511227/"}
