@@ -13,9 +13,7 @@ function Home() {
       <div className={Styles.container}>
         <div className={Styles.aboutmeWrapper}>
           <h1 className={Styles.title}>
-            <b>
-              About <span>Me</span>
-            </b>
+            About <span>Me</span>
           </h1>
           <div className={Styles.paragraph}>
             Hello! My name is Kevin Glennon a software engineer based in Dublin,
@@ -30,7 +28,7 @@ function Home() {
             students.
           </div>
         </div>
-        <div className={Styles.skillWrapper}>
+        <div className={Styles.aboutmeWrapper}>
           <h1 className={Styles.title}>
             <span>My</span> Skills
           </h1>
