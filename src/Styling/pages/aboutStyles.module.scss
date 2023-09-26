@@ -3,7 +3,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 80%;
   height: auto;
   background-color: $main-colour;
   color: white;
@@ -12,6 +12,7 @@
 
 .aboutmeWrapper {
   margin: 2% 2% 0% 2%;
+  width: 60%;
 }
 
 .title {

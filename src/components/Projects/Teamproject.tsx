@@ -8,7 +8,7 @@ function Teamproject() {
       <div className={Styles.container}>
         <h1 className={Styles.title}>Food and Drink Website</h1>
         <div className={Styles.wrapper}>
-          <img src="" alt="Img" className={Styles.projectImg} />
+          <img src={websitePic} alt="Img" className={Styles.projectImg} />
           <div className={Styles.descriptionWrapper}>
             <div className={Styles.paragraph}>
               This is a project I made in college for a group project. It is a

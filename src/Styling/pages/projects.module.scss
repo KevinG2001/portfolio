@@ -3,7 +3,7 @@
 .projectContainer {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 80%;
   height: auto;
   background-color: $main-colour;
   color: white;
@@ -23,7 +23,7 @@
 
 .projectImg {
   width: 50%;
-  height: 50%;
+  height: inherit;
   align-items: center;
   justify-content: center;
   border-top-left-radius: 15px;
