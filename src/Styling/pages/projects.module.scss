@@ -3,21 +3,19 @@
 .projectContainer {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 60%;
   height: auto;
-  margin: 1% 5%;
   background-color: $main-colour;
   color: white;
   font-size: 1.2rem;
 }
 
-.container {
+.wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  // width: 100%;
-  // height: auto;
-  margin: 5% 0px 5% 0px;
+  width: 60%;
+  height: auto;
+  margin: 2% 2% 0% 2%;
   background-color: $tertiary-colour;
   border-radius: 15px;
   color: white;
@@ -31,15 +29,17 @@
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
-
+.title {
+  margin: 2% 2%;
+  width: 60%;
+  color: $white-colour;
+  border-bottom: 2px solid $tertiary-colour;
+}
 .descriptionWrapper {
-  margin: 2%;
+  margin: 1%;
   width: 75%;
   font-size: 1.2rem;
-  .title {
-    text-align: center;
-    border-bottom: 2px solid $main-colour;
-  }
+
   .paragraph {
     margin: 5%;
   }
