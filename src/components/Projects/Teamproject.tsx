@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Styles from "../../Styling/pages/projects.module.scss";
+import websitePic from "../../assests/websitePics/DrinkRecSite.png";
 
 function Teamproject() {
   return (

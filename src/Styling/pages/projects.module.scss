@@ -14,6 +14,7 @@
 .container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   // width: 100%;
   // height: auto;
   margin: 5% 0px 5% 0px;
@@ -24,6 +25,7 @@
 
 .projectImg {
   width: 50%;
+  height: 50%;
   align-items: center;
   justify-content: center;
   border-top-left-radius: 15px;
