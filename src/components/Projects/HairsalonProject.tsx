@@ -26,7 +26,7 @@ function HairsalonProject() {
               className={Styles.btn}
             >
               View Code
-            </Link>{" "}
+            </Link>
           </div>
         </div>
       </div>
