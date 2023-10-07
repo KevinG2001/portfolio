@@ -4,12 +4,8 @@ $tertiary-colour: #DE9E48;
 $quaternary-colour: #7A431D;
 $white-colour: #FFFFFF; */
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .app-container {
   display: flex;
   background-color: #363538;
+  height: 100%;
 }
