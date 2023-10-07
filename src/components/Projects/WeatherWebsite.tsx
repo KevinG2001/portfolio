@@ -17,8 +17,17 @@ function WeatherWebsite() {
               I used basic HTML and JavaScript and styled using CSS.
             </div>
             <div className={Styles.btnWrapper}>
-              <Link to="" className={Styles.btn}>
-                View Code (Link needed)
+              <Link
+                to="https://keving2001.github.io/weatherWebsite/"
+                className={Styles.btn}
+              >
+                View Project
+              </Link>
+              <Link
+                to="https://github.com/KevinG2001/weatherWebsite"
+                className={Styles.btn}
+              >
+                View Code
               </Link>
             </div>
           </div>
