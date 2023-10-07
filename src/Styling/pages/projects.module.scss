@@ -14,9 +14,9 @@
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 60%;
+  width: 80%;
   height: auto;
-  margin: 2% 2% 0% 2%;
+  margin: 1% 2% 1% 2%;
   background-color: $tertiary-colour;
   border-radius: 15px;
   color: white;
@@ -25,10 +25,8 @@
 .projectImg {
   width: 50%;
   height: inherit;
-  align-items: center;
-  justify-content: center;
-  border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
 }
 .title {
   margin: 2% 2%;
