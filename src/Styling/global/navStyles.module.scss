@@ -4,6 +4,7 @@
   width: 20%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   background-color: $secondary-colour;
   color: $white-colour;
   .navWrapper {
@@ -15,6 +16,7 @@
     .navTitleWrapper {
       justify-content: center;
       align-items: center;
+      text-align: center;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -55,5 +57,91 @@
     text-decoration: none;
     color: $white-colour;
     font-size: 1.2rem;
+  }
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .burgerMenu {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    margin: 2%;
+    width: 50px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .burgerMenu .burgerLine {
+    width: 4em;
+    height: 0.5em;
+    background-color: white;
+    border-radius: 50px;
+  }
+
+  .burgerMenu .activeLine1 {
+    transform: translateY(22px) rotate(-45deg);
+    transition: ease-in-out 0.5s;
+  }
+
+  .burgerMenu .activeLine2 {
+    opacity: 0;
+  }
+
+  .burgerMenu .activeLine3 {
+    transform: translateY(-22px) rotate(45deg);
+    transition: ease-in-out 0.5s;
+  }
+  .navContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    .navWrapper {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      .navTitleWrapper {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        margin-top: 1%;
+        .profilePic {
+          border-radius: 50%;
+          width: 25%;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .navList {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin: 1%;
+    }
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .activeDropdown {
+    display: flex;
+    flex-direction: column;
   }
 }
