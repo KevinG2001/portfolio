@@ -91,6 +91,11 @@
   transform: translateY(-22px) rotate(45deg);
   transition: ease-in-out 0.5s;
 }
+.dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (max-width: 768px) {
   .navContainer {
@@ -125,5 +130,13 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+  .dropdown {
+    display: none;
+  }
+
+  .activeDropdown {
+    display: flex;
+    flex-direction: column;
   }
 }
