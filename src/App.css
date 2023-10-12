@@ -9,3 +9,10 @@ $white-colour: #FFFFFF; */
   background-color: #363538;
   height: 100%;
 }
+
+@media (max-width: 768px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

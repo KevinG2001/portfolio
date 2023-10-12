@@ -4,6 +4,7 @@
   width: 20%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   background-color: $secondary-colour;
   color: $white-colour;
   .navWrapper {
@@ -55,5 +56,74 @@
     text-decoration: none;
     color: $white-colour;
     font-size: 1.2rem;
+  }
+}
+
+.burgerMenu {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  margin-top: 2%;
+  height: 50px;
+  width: 50px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.burgerMenu .burgerLine {
+  width: 4em;
+  height: 0.5em;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.burgerMenu .activeLine1 {
+  transform: translateY(22px) rotate(-45deg);
+  transition: ease-in-out 0.5s;
+}
+
+.burgerMenu .activeLine2 {
+  opacity: 0;
+}
+
+.burgerMenu .activeLine3 {
+  transform: translateY(-22px) rotate(45deg);
+  transition: ease-in-out 0.5s;
+}
+
+@media (max-width: 768px) {
+  .navContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    justify-content: center;
+  }
+  .navWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+  }
+  .navTitleWrapper {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+  }
+  .profilePic {
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .navList {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 }

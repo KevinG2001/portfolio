@@ -15,6 +15,11 @@ function Navbar() {
     setActivePage(currentPath);
   }, [location]);
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleBurgerMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <nav className={Styles.navContainer}>
@@ -72,6 +77,23 @@ function Navbar() {
               >
                 <img src={githubPic} alt="Github" className={Styles.imgTag} />
               </Link>
+            </div>
+            <div className={Styles.burgerMenu} onClick={toggleBurgerMenu}>
+              <div
+                className={`${Styles.burgerLine} ${
+                  isOpen ? Styles.activeLine1 : ""
+                }`}
+              ></div>
+              <div
+                className={`${Styles.burgerLine} ${
+                  isOpen ? Styles.activeLine2 : ""
+                }`}
+              ></div>
+              <div
+                className={`${Styles.burgerLine} ${
+                  isOpen ? Styles.activeLine3 : ""
+                }`}
+              ></div>
             </div>
           </div>
         </div>
