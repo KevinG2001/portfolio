@@ -13,7 +13,6 @@ function PasswordManager() {
             This is a project I made we made in college for a group project. It
             is a password Manager that we needed to encrypt the passwords on.
           </div>
-          <div className={Styles.paragraph}></div>
           <div className={Styles.paragraph}>
             We used Python and Anaconda, We used tkinter for the GUI and
             encryption library for hasing the login password and encrpytion the
