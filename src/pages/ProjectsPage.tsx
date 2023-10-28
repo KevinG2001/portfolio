@@ -1,5 +1,6 @@
 import Styles from "../Styling/pages/projects.module.scss";
 import HairsalonProject from "../components/Projects/HairsalonProject";
+import PasswordManager from "../components/Projects/PasswordManager";
 import Teamproject from "../components/Projects/Teamproject";
 import WeatherWebsite from "../components/Projects/WeatherWebsite";
 
@@ -10,6 +11,7 @@ function Projects() {
         <HairsalonProject />
         <Teamproject />
         <WeatherWebsite />
+        <PasswordManager />
       </div>
     </>
   );
