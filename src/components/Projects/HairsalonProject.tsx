@@ -10,10 +10,15 @@ function HairsalonProject() {
         <img src={websiteImg} alt="Img" className={Styles.projectImg} />
         <div className={Styles.descriptionWrapper}>
           <div className={Styles.paragraph}>
-            This is my first project, Its a hair salon made in React.
+            This is my first frontend project, Its a hair salon based on the
+            design of "Debonair".
           </div>
           <div className={Styles.paragraph}>
-            The frontend is made with React.js and it is styled using SASS
+            The website is made using React.js and TypeScript, It is styled
+            using SASS.
+          </div>
+          <div className={Styles.paragraph}>
+            Planing to implement a booking system on the website.
           </div>
           <div className={Styles.btnWrapper}>
             <Link
