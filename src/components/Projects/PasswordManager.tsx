@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Styles from "../../Styling/pages/projects.module.scss";
-import websiteImg from "../../assests/websitePics/HairSalonWebsite.png";
+import websiteImg from "../../assests/websitePics/PasswordManager.png";
 
 function PasswordManager() {
   return (
