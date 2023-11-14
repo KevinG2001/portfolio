@@ -16,16 +16,16 @@ function Home() {
             About <span>Me</span>
           </h1>
           <div className={Styles.paragraph}>
-            Hello! My name is Kevin Glennon a software engineer based in Dublin,
-            Ireland. I enjoy making websites and random programs for some fun,
-            This is were my interest in studying Computer Science came from and
-            now here I am!
+            Hello! My name is Kevin Glennon, a software engineer based in
+            Dublinm Ireland. For fun, I enjoy making websites and random
+            programs. THis is where my interest in studying Computer Science
+            came from and now here I am!
           </div>
           <div className={Styles.paragraph}>
-            Today I Attend at the National College of Ireland studying computer
-            science. I am currently engaged in all aspects of the course
-            including coursework, projects and collaborative projects with other
-            students.
+            Currently, I am a 3rd year student studying Computer Science at the
+            National College of Ireland. I am currently engaged in all aspects
+            of the course including coursework, projects and collaborative
+            projects with other students
           </div>
         </div>
         <div className={Styles.aboutmeWrapper}>
@@ -33,10 +33,10 @@ function Home() {
             <span>My</span> Skills
           </h1>
           <div className={Styles.paragraph}>
-            I am happy to say I have a strong foundation in computer science
-            principles and practical skills and have a good amount of skills in
-            in this field and I am atleast familiar with them and always looking
-            to expand them!
+            I am peased to say that I have a solid grounding in computer science
+            principles and practical skills. I have a considerable prodiciency
+            in this field and am contiunally seeking opportunities to enhance
+            and broaden my skill set.
             <div className={Styles.skillImgWrapper}>
               <img src={html5Logo} alt="" className={Styles.skillImg} />
               <img src={javascriptLogo} alt="" className={Styles.skillImg} />
