@@ -5,7 +5,6 @@ $quaternary-colour: #7A431D;
 $white-colour: #FFFFFF; */
 
 .app-container {
-  display: flex;
   background-color: #363538;
   height: 100%;
 }
