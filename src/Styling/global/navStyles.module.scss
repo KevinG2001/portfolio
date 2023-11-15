@@ -16,6 +16,7 @@
   border-radius: 50%;
   width: 75px;
   height: 75px;
+  margin-left: 15px;
 }
 
 .navUlWrapper {
@@ -51,6 +52,7 @@
   background-color: transparent;
   color: white;
   text-decoration: none !important;
+  font-size: 1.6rem;
 }
 
 .navLink:hover {
@@ -76,7 +78,6 @@
 .navSocials {
   display: flex;
   align-items: center;
-  margin-left: 5%;
 }
 
 .burgerMenu {
@@ -84,7 +85,7 @@
 }
 
 .navSocailImg {
-  width: 25px;
+  width: 50px;
   margin-right: 15px;
 }
 
