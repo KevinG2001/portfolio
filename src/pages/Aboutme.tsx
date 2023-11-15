@@ -17,15 +17,15 @@ function Home() {
           </h1>
           <div className={Styles.paragraph}>
             Hello! My name is Kevin Glennon, a software engineer based in
-            Dublinm Ireland. For fun, I enjoy making websites and random
-            programs. THis is where my interest in studying Computer Science
+            Dublin, Ireland. For fun, I enjoy making websites and random
+            programs. This is where my interest in studying Computer Science
             came from and now here I am!
           </div>
           <div className={Styles.paragraph}>
             Currently, I am a 3rd year student studying Computer Science at the
             National College of Ireland. I am currently engaged in all aspects
             of the course including coursework, projects and collaborative
-            projects with other students
+            projects with other students.
           </div>
         </div>
         <div className={Styles.aboutmeWrapper}>
@@ -33,10 +33,10 @@ function Home() {
             <span>My</span> Skills
           </h1>
           <div className={Styles.paragraph}>
-            I am peased to say that I have a solid grounding in computer science
-            principles and practical skills. I have a considerable prodiciency
-            in this field and am contiunally seeking opportunities to enhance
-            and broaden my skill set.
+            I am pleased to say that I have a solid grounding in computer
+            science principles and practical skills. I have a considerable
+            proficiency in this field and am contiunally seeking opportunities
+            to enhance and broaden my skill set.
             <div className={Styles.skillImgWrapper}>
               <img src={html5Logo} alt="" className={Styles.skillImg} />
               <img src={javascriptLogo} alt="" className={Styles.skillImg} />
