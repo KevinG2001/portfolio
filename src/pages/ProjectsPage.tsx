@@ -12,8 +12,8 @@ function Projects() {
         <HairsalonProject />
         <Teamproject />
         <WeatherWebsite />
-        <PasswordManager />
         <Portfolio />
+        <PasswordManager />
       </div>
     </>
   );

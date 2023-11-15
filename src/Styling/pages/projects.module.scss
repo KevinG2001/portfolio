@@ -3,20 +3,23 @@
 .projectContainer {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  height: auto;
+  width: 100%;
   background-color: $main-colour;
-  color: white;
   font-size: 1.2rem;
-  overflow-y: auto;
+  margin-top: 1%;
 }
-
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .wrapper {
   display: flex;
   flex-direction: row;
   width: 80%;
   height: auto;
-  margin: 1% 2% 1% 2%;
   background-color: $tertiary-colour;
   border-radius: 15px;
   color: white;
@@ -29,15 +32,17 @@
   border-top-left-radius: 15px;
 }
 .title {
-  margin: 2% 2%;
+  display: flex;
+  margin: 1% 2%;
   width: 80%;
+  justify-content: center;
   color: $white-colour;
   border-bottom: 2px solid $tertiary-colour;
 }
 .descriptionWrapper {
   margin: 1%;
   width: 75%;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 
   .paragraph {
     margin: 5%;
