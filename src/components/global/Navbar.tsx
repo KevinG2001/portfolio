@@ -58,7 +58,15 @@ function Navbar() {
                   Styles.navLink + (activePage === "/" ? " active" : "")
                 }
               >
-                About Me {activePage === "/" && ">"}
+                Home {activePage === "/" && ">"}
+              </Link>
+              <Link
+                to={"/About"}
+                className={
+                  Styles.navLink + (activePage === "/About" ? " active" : "")
+                }
+              >
+                About Me {activePage === "/About" && ">"}
               </Link>
               <Link
                 to={"/Projects"}

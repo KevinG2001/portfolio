@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 48px;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.profilePic {
+  border-radius: 50%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
