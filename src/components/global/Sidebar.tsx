@@ -31,9 +31,6 @@ function Sidebar({ showSidebar, toggleSidebar }) {
           </div>
         </div>
       </div>
-      <button className={Style.closeBtn} onClick={toggleSidebar}>
-        Close
-      </button>
     </div>
   );
 }

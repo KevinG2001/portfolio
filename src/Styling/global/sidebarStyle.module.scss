@@ -61,3 +61,16 @@
 .socialImg {
   margin: 2% 3%;
 }
+
+.floatingBtn {
+  position: fixed;
+  top: 50px;
+  left: 100px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Adjust this color if needed */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1001; /* Ensure the button is above other content */
+}

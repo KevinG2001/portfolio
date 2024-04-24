@@ -1,12 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Aboutme from "./pages/Aboutme";
 import Navbar from "./components/global/Navbar";
 import Projects from "./pages/ProjectsPage";
 import ContactMe from "./pages/ContactMe";
 import Home from "./pages/Home";
-import { useEffect, useState } from "react";
 import Sidebar from "./components/global/Sidebar";
+import sidebarStyle from "./Styling/global/sidebarStyle.module.scss";
+import { burgerMenuImg } from "./assests/icons8-hamburger-menu.svg";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -35,9 +37,12 @@ function App() {
         <Navbar />
         {/* Show Button if you scroll down */}
         {showButton && (
-          <button className="floatingBtn" onClick={toggleSidebar}>
-            Menu
-          </button>
+          <img
+            src={burgerMenuImg}
+            alt="burgerMenu"
+            onClick={toggleSidebar}
+            className={sidebarStyle.floatingBtn}
+          />
         )}
         {/* Show sidebar if you click the button */}
         {showSidebar && (
