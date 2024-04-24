@@ -1,0 +1,63 @@
+.container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  z-index: 999;
+  background-color: red;
+}
+
+.socialImg {
+  width: 50px;
+}
+
+.profileImg {
+  width: 100px;
+  border-radius: 50px;
+}
+
+.sidebarBtn {
+  position: relative;
+  font-size: 18px;
+  margin: 0 15px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
+  text-decoration: none !important;
+  font-size: 1.6rem;
+  margin: 15% 0%;
+}
+
+.socialWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.socialTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 2px solid;
+}
+
+.socialBtnWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.socialImg {
+  margin: 2% 3%;
+}

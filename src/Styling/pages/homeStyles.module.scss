@@ -1,5 +1,4 @@
 .container {
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -9,13 +8,20 @@
 
 .wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100%;
 }
 
+.landingWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 850px;
+}
 .sidePanel {
   display: flex;
   align-items: center;

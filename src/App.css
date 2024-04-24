@@ -6,8 +6,9 @@ $white-colour: #FFFFFF; */
 
 .app-container {
   background-color: #363538;
-  height: 100%;
+  min-height: 100vh; /* Ensure the container takes up at least the height of the viewport */
   box-sizing: border-box;
+  position: relative; /* Ensure the container is relative for z-index */
 }
 
 @media (max-width: 768px) {
@@ -15,4 +16,17 @@ $white-colour: #FFFFFF; */
     display: flex;
     flex-direction: column;
   }
+}
+
+.floatingBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Adjust this color if needed */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1001; /* Ensure the button is above other content */
 }

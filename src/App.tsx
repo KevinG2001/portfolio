@@ -5,12 +5,44 @@ import Navbar from "./components/global/Navbar";
 import Projects from "./pages/ProjectsPage";
 import ContactMe from "./pages/ContactMe";
 import Home from "./pages/Home";
+import { useEffect, useState } from "react";
+import Sidebar from "./components/global/Sidebar";
 
 function App() {
+  const [showButton, setShowButton] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setShowButton(scrollPosition > 0); // Show button when scrolling down
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const toggleSidebar = () => {
+    setShowSidebar(!showSidebar);
+  };
+
   return (
     <Router>
       <div className="app-container">
+        {/* Show Navbar */}
         <Navbar />
+        {/* Show Button if you scroll down */}
+        {showButton && (
+          <button className="floatingBtn" onClick={toggleSidebar}>
+            Menu
+          </button>
+        )}
+        {/* Show sidebar if you click the button */}
+        {showSidebar && (
+          <Sidebar showSidebar={showSidebar} toggleSidebar={toggleSidebar} />
+        )}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<Aboutme />} />
