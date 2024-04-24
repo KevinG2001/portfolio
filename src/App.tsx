@@ -8,7 +8,6 @@ import ContactMe from "./pages/ContactMe";
 import Home from "./pages/Home";
 import Sidebar from "./components/global/Sidebar";
 import sidebarStyle from "./Styling/global/sidebarStyle.module.scss";
-import { burgerMenuImg } from "./assests/icons8-hamburger-menu.svg";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -37,17 +36,12 @@ function App() {
         <Navbar />
         {/* Show Button if you scroll down */}
         {showButton && (
-          <img
-            src={burgerMenuImg}
-            alt="burgerMenu"
-            onClick={toggleSidebar}
-            className={sidebarStyle.floatingBtn}
-          />
+          <button onClick={toggleSidebar} className={sidebarStyle.floatingBtn}>
+            Menu
+          </button>
         )}
         {/* Show sidebar if you click the button */}
-        {showSidebar && (
-          <Sidebar showSidebar={showSidebar} toggleSidebar={toggleSidebar} />
-        )}
+        <Sidebar showSidebar={showSidebar} toggleSidebar={toggleSidebar} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<Aboutme />} />

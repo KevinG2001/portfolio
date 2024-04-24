@@ -1,6 +1,7 @@
 .container {
   position: fixed;
   top: 0;
+  left: -300px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -9,6 +10,17 @@
   height: 100%;
   z-index: 999;
   background-color: red;
+  transition: left 0.9s ease, border-top-right-radius 0.9s ease,
+    border-bottom-right-radius 0.9s ease;
+  border-top-right-radius: 75%;
+  border-bottom-right-radius: 75%;
+  transform: 0.9s;
+}
+
+.show {
+  left: 0;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
 }
 
 .socialImg {
