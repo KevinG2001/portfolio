@@ -6,6 +6,9 @@ import Styles from "../Styling/pages/projectList.module.scss";
 // import Teamproject from "../components/Projects/Teamproject";
 // import WeatherWebsite from "../components/Projects/WeatherWebsite";
 import hairsalonImg from "../assests/websitePics/HairSalonWebsite.png";
+import drinkRecImg from "../assests/websitePics/DrinkRecSite.png";
+import passwordMangerImg from "../assests/websitePics/PasswordManager.png";
+import weatherWebsiteImg from "../assests/websitePics/WeatherWebsite.png";
 
 function Projects() {
   useEffect(() => {
@@ -53,14 +56,29 @@ function Projects() {
             <li className={Styles.projectItem}>
               <div className={Styles.projectName}>Team Project</div>
               <div className={Styles.projectName}>Design, Development</div>
+              <img
+                className={Styles.projectPreview}
+                src={drinkRecImg}
+                alt="DrinkRec Preview"
+              />
             </li>
             <li className={Styles.projectItem}>
               <div className={Styles.projectName}>Weather Website</div>
               <div className={Styles.projectName}>Design, Development</div>
+              <img
+                className={Styles.projectPreview}
+                src={weatherWebsiteImg}
+                alt="weatherWebsite Preview"
+              />
             </li>
             <li className={Styles.projectItem}>
               <div className={Styles.projectName}>Password Manager</div>
               <div className={Styles.projectName}>Design, Development</div>
+              <img
+                className={Styles.projectPreview}
+                src={passwordMangerImg}
+                alt="PasswordManager Preview"
+              />
             </li>
           </ul>
         </div>
