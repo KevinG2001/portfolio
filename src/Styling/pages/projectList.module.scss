@@ -1,0 +1,35 @@
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.projectsWrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 0px;
+}
+
+.projectItem {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 32px;
+  padding: 5%;
+  border-top: 2px solid red;
+  cursor: pointer;
+}

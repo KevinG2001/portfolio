@@ -2,6 +2,7 @@ import styles from "../Styling/pages/homeStyles.module.scss";
 import profilePic from "../assests/profilePic.jpeg";
 import planetImg from "../assests/planet-earth-svgrepo-com.svg";
 import AboutMe from "../pages/Aboutme";
+import ProjectsList from "./ProjectsPage";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
             </div>
           </div>
           <AboutMe />
+          <ProjectsList />
         </div>
       </div>
     </>
