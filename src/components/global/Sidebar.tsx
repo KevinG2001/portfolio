@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import Style from "../../Styling/global/sidebarStyle.module.scss";
 import linkdinImg from "../../assests/contact/linkedin.svg";

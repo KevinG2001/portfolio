@@ -36,9 +36,16 @@ function App() {
         <Navbar />
         {/* Show Button if you scroll down */}
         {showButton && (
-          <button onClick={toggleSidebar} className={sidebarStyle.floatingBtn}>
-            Menu
-          </button>
+          <div
+            className={`${sidebarStyle.floatingBtn} ${
+              showSidebar ? sidebarStyle.open : ""
+            }`}
+            onClick={toggleSidebar}
+          >
+            <div className={sidebarStyle.bar1}></div>
+            <div className={sidebarStyle.bar2}></div>
+            <div className={sidebarStyle.bar3}></div>
+          </div>
         )}
         {/* Show sidebar if you click the button */}
         <Sidebar showSidebar={showSidebar} toggleSidebar={toggleSidebar} />
