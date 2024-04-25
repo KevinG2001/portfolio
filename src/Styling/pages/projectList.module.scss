@@ -24,12 +24,28 @@
 }
 
 .projectItem {
+  position: relative; /* Add this line */
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-size: 32px;
-  padding: 5%;
+  padding: 5% 0%;
   border-top: 2px solid red;
   cursor: pointer;
+}
+
+.projectPreview {
+  display: none;
+  position: fixed;
+  width: 250px;
+  height: 150px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.projectItem:hover .projectPreview {
+  display: block;
 }
