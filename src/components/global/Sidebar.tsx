@@ -4,7 +4,11 @@ import linkdinImg from "../../assests/contact/linkedin.svg";
 import githubImg from "../../assests/contact/github.svg";
 import cv from "../../assests/CV_2023.pdf";
 
-function Sidebar({ showSidebar, toggleSidebar }) {
+interface SidebarProps {
+  showSidebar: boolean;
+}
+
+function Sidebar({ showSidebar }: SidebarProps) {
   return (
     <div className={`${Style.container} ${showSidebar ? Style.show : ""}`}>
       <div className={Style.wrapper}>
