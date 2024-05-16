@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import navStyles from "../../styling/global/navStyles.module.scss";
 import { Link } from "react-router-dom";
 import profilePic from "../../assests/profilePic.jpeg";
 import linkedinLogo from "../../assests/contact/linkedin.svg";
 import githubLogo from "../../assests/contact/github.svg";
 import cv from "../../assests/CV_2023.pdf";
+import navStyles from "../../Styling/global/navStyles.module.scss";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
