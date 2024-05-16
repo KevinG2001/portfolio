@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main 
+      - main
 
 jobs:
   deploy:
@@ -19,13 +19,13 @@ jobs:
         node-version: '14'
 
     - name: Install dependencies
-      run: npm install 
+      run: npm install  
 
     - name: Build
-      run: npm run build 
+      run: npm run build  
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.TOKEN_PAGES }}
         publish_dir: ./build
