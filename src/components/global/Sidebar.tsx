@@ -7,21 +7,23 @@ import cv from "../../assests/CV_2023.pdf";
 function Sidebar({ showSidebar, toggleSidebar }) {
   return (
     <div className={`${Style.container} ${showSidebar ? Style.show : ""}`}>
-      <div>
-        <Link to="/About" className={Style.sidebarBtn}>
-          About
-        </Link>
-        <Link to="Projects" className={Style.sidebarBtn}>
-          Projects
-        </Link>
-        <Link to="/Contact" className={Style.sidebarBtn}>
-          Contact
-        </Link>
-        <a className={Style.sidebarBtn} href={cv}>
-          CV
-        </a>
+      <div className={Style.wrapper}>
+        <div className={Style.linkWrapper}>
+          <Link to="/About" className={Style.sidebarBtn}>
+            About
+          </Link>
+          <Link to="Projects" className={Style.sidebarBtn}>
+            Projects
+          </Link>
+          <Link to="/Contact" className={Style.sidebarBtn}>
+            Contact
+          </Link>
+          <a className={Style.sidebarBtn} href={cv}>
+            CV
+          </a>
+        </div>
       </div>
-      <div>
+      <div className={Style.wrapper}>
         <div className={Style.socialWrapper}>
           <div className={Style.socialTitle}>Socials</div>
           <div className={Style.socialBtnWrapper}>
