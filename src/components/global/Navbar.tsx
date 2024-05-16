@@ -1,116 +1,99 @@
-import Styles from "../../Styling/global/navStyles.module.scss";
+import { useEffect, useState } from "react";
+import navStyles from "../../styling/global/navStyles.module.scss";
+import { Link } from "react-router-dom";
 import profilePic from "../../assests/profilePic.jpeg";
-import linkdinPic from "../../assests/contact/linkedin.svg";
-import githubPic from "../../assests/contact/github.svg";
-import { Link, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import linkedinLogo from "../../assests/contact/linkedin.svg";
+import githubLogo from "../../assests/contact/github.svg";
 import cv from "../../assests/CV_2023.pdf";
 
 function Navbar() {
-  const [activePage, setActivePage] = useState("");
-  const location = useLocation();
-
-  useEffect(() => {
-    const currentPath = location.pathname;
-    setActivePage(currentPath);
-  }, [location]);
-
   const [isOpen, setIsOpen] = useState(false);
+  const [screenSize, setScreenSize] = useState(getDimension());
 
   const toggleBurgerMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  function getDimension() {
+    return {
+      width: window.innerWidth,
+      height: window.innerHeight,
+    };
+  }
+
+  useEffect(() => {
+    const updateDimension = () => {
+      setScreenSize(getDimension());
+    };
+    window.addEventListener("resize", updateDimension);
+
+    return () => {
+      window.removeEventListener("resize", updateDimension);
+    };
+  }, [screenSize]);
+
   return (
-    <>
-      <nav className={Styles.navContainer}>
-        <div className={Styles.burgerMenu} onClick={toggleBurgerMenu}>
+    <nav className={navStyles.navContainer}>
+      <div className={navStyles.navTitle}>
+        <Link to="/">
+          <img src={profilePic} alt="" className={navStyles.navLogo} />
+        </Link>
+        <div className={navStyles.burgerMenu} onClick={toggleBurgerMenu}>
           <div
-            className={`${Styles.burgerLine} ${
-              isOpen ? Styles.activeLine1 : ""
+            className={`${navStyles.burgerLine} ${
+              isOpen ? navStyles.activeLine1 : ""
             }`}
           ></div>
           <div
-            className={`${Styles.burgerLine} ${
-              isOpen ? Styles.activeLine2 : ""
+            className={`${navStyles.burgerLine} ${
+              isOpen ? navStyles.activeLine2 : ""
             }`}
           ></div>
           <div
-            className={`${Styles.burgerLine} ${
-              isOpen ? Styles.activeLine3 : ""
+            className={`${navStyles.burgerLine} ${
+              isOpen ? navStyles.activeLine3 : ""
             }`}
           ></div>
         </div>
-        <div
-          className={`${Styles.dropdown} ${
-            isOpen ? Styles.activeDropdown : ""
-          }`}
-        >
-          <div className={Styles.navWrapper}>
-            <div className={Styles.navTitleWrapper}>
-              <img src={profilePic} alt="" className={Styles.profilePic} />
-              <div className={Styles.title}>Kevin Glennon</div>
-              <div className={Styles.subTitle}>Software Engineer</div>
-            </div>
-            <div className={Styles.navList}>
-              <Link
-                to={"/"}
-                className={
-                  Styles.navLink + (activePage === "/" ? " active" : "")
-                }
-              >
-                About Me {activePage === "/" && ">"}
-              </Link>
-              <Link
-                to={"/Projects"}
-                className={
-                  Styles.navLink + (activePage === "/Projects" ? " active" : "")
-                }
-              >
-                Projects {activePage === "/Projects" && ">"}
-              </Link>
-            </div>
-            <div className={Styles.navList}>
-              <Link
-                to={"/Contact"}
-                className={
-                  Styles.navLink + (activePage === "/Contact" ? " active" : "")
-                }
-              >
-                Contact Me {activePage === "/Contact" && ">"}
-              </Link>
-              <a
-                href={cv}
-                className={Styles.navLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CV
-              </a>
-              <div className={Styles.contactSocials}>
-                <Link
-                  to={"https://www.linkedin.com/in/kevin-glennon-98b511227/"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={linkdinPic}
-                    alt="Linkdin"
-                    className={Styles.imgTag}
-                  />
-                </Link>
-                <Link
-                  to={"https://github.com/KevinG2001?tab=repositories"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={githubPic} alt="Github" className={Styles.imgTag} />
-                </Link>
-              </div>
-            </div>
+      </div>
+      <div
+        className={`${navStyles.dropdown} ${
+          isOpen ? navStyles.activeDropdown : ""
+        }`}
+      >
+        <ul className={navStyles.navUl}>
+          <Link to="/About" className={navStyles.navLink}>
+            About
+          </Link>
+          <Link to="/Projects" className={navStyles.navLink}>
+            Projects
+          </Link>
+          <Link to="/Contact" className={navStyles.navLink}>
+            Contact
+          </Link>
+          <a
+            href={cv}
+            className={navStyles.navLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CV
+          </a>
+        </ul>
+        {isOpen && (
+          <div className={navStyles.navSocials}>
+            <img src={linkedinLogo} alt="" className={navStyles.navSocailImg} />
+            <img src={githubLogo} alt="" className={navStyles.navSocailImg} />
           </div>
+        )}
+      </div>
+      {screenSize.width >= 960 ? (
+        <div className={navStyles.navSocials}>
+          <img src={linkedinLogo} alt="" className={navStyles.navSocailImg} />
+          <img src={githubLogo} alt="" className={navStyles.navSocailImg} />
         </div>
-      </nav>
-    </>
+      ) : null}
+    </nav>
   );
 }
 

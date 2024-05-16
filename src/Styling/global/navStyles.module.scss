@@ -1,79 +1,162 @@
-@import "../global/default.module.scss";
+@import "./default.module.scss";
 
 .navContainer {
-  width: 20%;
-  height: 100%;
   display: flex;
-  flex-direction: column;
-  background-color: $secondary-colour;
-  color: $white-colour;
-  .navWrapper {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background-color: #00000080;
+  align-items: center;
+  z-index: 998;
+}
 
-    .navTitleWrapper {
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      font-size: 22px;
-      margin-top: 10%;
-      margin-bottom: 5%;
+.navLogo {
+  display: block;
+  height: 100px;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin-left: 15px;
+}
 
-      .profilePic {
-        border-radius: 50%;
-        width: 50%;
-        justify-content: center;
-        align-items: center;
-      }
-      .title {
-        font-weight: bold;
-      }
-    }
-  }
+.navUlWrapper {
+  display: flex;
+}
 
-  .navList {
-    width: 80%;
-    line-height: 30px;
-    margin: 5%;
-    flex-direction: column;
-    display: flex;
+.navUl {
+  display: flex;
+  padding-inline-start: 0;
+}
 
-    .contactSocials {
-      margin-top: 5%;
-
-      .imgTag {
-        width: 10%;
-        border-radius: 50px;
-        margin-right: 2%;
-      }
-    }
-  }
-  .navLink {
-    text-decoration: none;
-    color: $white-colour;
-    font-size: 1.2rem;
-  }
+.navUl ul {
+  padding-inline-start: 0;
 }
 
 .dropdown {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-@media (max-width: 768px) {
+.navLink {
+  position: relative;
+  font-size: 18px;
+  margin: 0 15px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
+  text-decoration: none !important;
+  font-size: 1.6rem;
+}
+
+.navLink:hover {
+  color: $main-colour;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* Adjust this value to control the thickness of the arrow */
+  background-color: $tertiary-colour;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navLink:hover:after {
+  transform: scaleX(1);
+}
+
+.navSocials {
+  display: flex;
+  align-items: center;
+}
+
+.burgerMenu {
+  display: none;
+}
+
+.navSocailImg {
+  width: 50px;
+  margin-right: 15px;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 960px) {
+  .navContainer {
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Distribute items evenly */
+    height: auto; /* Allow container to expand with content */
+    padding-bottom: 10px; /*Just adds spacing to the bottom of navbar*/
+  }
+
+  .navLogo {
+    margin: 10px auto; /* Center the logo */
+  }
+  .navTitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+  }
+
+  .navUlWrapper {
+    width: 100%; /* Full width for navigation items */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navUl {
+    flex-direction: column; /* Stack navigation items vertically */
+    margin: 0;
+    align-items: center;
+    padding: 0;
+  }
+
+  .navLink {
+    margin: 5px 0; /* Adjust spacing between items */
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+
+  .navSocials {
+    border-top: 2px solid white;
+    padding-top: 5px;
+    justify-content: space-between; /* Center social icons */
+    margin: 0;
+  }
+
+  .navSocailImg {
+    margin: 5px;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .activeDropdown {
+    display: flex;
+    flex-direction: column;
+  }
+
   .burgerMenu {
     cursor: pointer;
     display: flex;
     position: relative;
-    margin: 2%;
-    width: 50px;
+    // margin-top: 2%;
     height: 50px;
+    width: 50px;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -99,41 +182,55 @@
     transform: translateY(-22px) rotate(45deg);
     transition: ease-in-out 0.5s;
   }
+}
+
+@media (max-width: 768px) {
   .navContainer {
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Distribute items evenly */
+    height: auto; /* Allow container to expand with content */
+    padding-bottom: 10px; /*Just adds spacing to the bottom of navbar*/
+  }
+
+  .navLogo {
+    margin: 10px auto; /* Center the logo */
+  }
+  .navTitle {
     width: 100%;
-    height: auto;
     display: flex;
-    flex-direction: column;
-    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+  }
+
+  .navUlWrapper {
+    width: 100%; /* Full width for navigation items */
+    display: flex;
     justify-content: center;
     align-items: center;
-    .navWrapper {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      .navTitleWrapper {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        font-size: 18px;
-        margin-top: 1%;
-        .profilePic {
-          border-radius: 50%;
-          width: 25%;
-          justify-content: center;
-          align-items: center;
-        }
-      }
-    }
-    .navList {
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      margin: 1%;
-    }
+  }
+
+  .navUl {
+    flex-direction: column; /* Stack navigation items vertically */
+    margin: 0;
+    align-items: center;
+    padding: 0;
+  }
+
+  .navLink {
+    margin: 5px 0; /* Adjust spacing between items */
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+
+  .navSocials {
+    border-top: 2px solid white;
+    padding-top: 5px;
+    justify-content: space-between; /* Center social icons */
+    margin: 0;
+  }
+
+  .navSocailImg {
+    margin: 5px;
   }
 
   .dropdown {
@@ -143,5 +240,38 @@
   .activeDropdown {
     display: flex;
     flex-direction: column;
+  }
+
+  .burgerMenu {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    margin-top: 2%;
+    height: 50px;
+    width: 50px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .burgerMenu .burgerLine {
+    width: 4em;
+    height: 0.5em;
+    background-color: white;
+    border-radius: 50px;
+  }
+
+  .burgerMenu .activeLine1 {
+    transform: translateY(22px) rotate(-45deg);
+    transition: ease-in-out 0.5s;
+  }
+
+  .burgerMenu .activeLine2 {
+    opacity: 0;
+  }
+
+  .burgerMenu .activeLine3 {
+    transform: translateY(-22px) rotate(45deg);
+    transition: ease-in-out 0.5s;
   }
 }

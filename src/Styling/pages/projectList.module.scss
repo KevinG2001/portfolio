@@ -1,0 +1,52 @@
+@import "../global/default.module.scss";
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.projectsWrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 0px;
+}
+
+.projectItem {
+  position: relative; /* Add this line */
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 32px;
+  padding: 5% 0%;
+  border-top: 2px solid $main-colour;
+  cursor: pointer;
+}
+
+.projectPreview {
+  display: none;
+  position: fixed;
+  width: 250px;
+  height: 150px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.projectItem:hover .projectPreview {
+  display: block;
+}
