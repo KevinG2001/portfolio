@@ -48,7 +48,7 @@ function App() {
           </div>
         )}
         {/* Show sidebar if you click the button */}
-        <Sidebar showSidebar={showSidebar} toggleSidebar={toggleSidebar} />
+        <Sidebar showSidebar={showSidebar} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<Aboutme />} />
