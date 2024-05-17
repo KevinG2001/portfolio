@@ -34,8 +34,12 @@ function Sidebar({ showSidebar }: SidebarProps) {
         <div className={Style.socialWrapper}>
           <div className={Style.socialTitle}>Socials</div>
           <div className={Style.socialBtnWrapper}>
-            <img src={linkdinImg} alt="" className={Style.socialImg} />
-            <img src={githubImg} alt="" className={Style.socialImg} />
+            <a href="https://www.linkedin.com/in/kevinglennon01/">
+              <img src={linkdinImg} alt="" className={Style.socialImg} />
+            </a>
+            <a href="https://github.com/KevinG2001">
+              <img src={githubImg} alt="" className={Style.socialImg} />
+            </a>
           </div>
         </div>
       </div>
