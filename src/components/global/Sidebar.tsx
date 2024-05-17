@@ -11,6 +11,9 @@ interface SidebarProps {
 function Sidebar({ showSidebar }: SidebarProps) {
   return (
     <div className={`${Style.container} ${showSidebar ? Style.show : ""}`}>
+      <div className={Style.wrapper} id={Style.hideThis}>
+        This will be hidden
+      </div>
       <div className={Style.wrapper}>
         <div className={Style.linkWrapper}>
           <Link to="/About" className={Style.sidebarBtn}>
