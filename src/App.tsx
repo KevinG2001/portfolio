@@ -3,11 +3,12 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Aboutme from "./pages/Aboutme";
 import Navbar from "./components/global/Navbar";
-import Projects from "./pages/ProjectsPage";
+import Projects from "./pages/SmallProjectList";
 import ContactMe from "./pages/ContactMe";
 import Home from "./pages/Home";
 import Sidebar from "./components/global/Sidebar";
 import sidebarStyle from "./Styling/global/sidebarStyle.module.scss";
+import HairsalonProject from "./components/Projects/HairsalonProject";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -54,6 +55,7 @@ function App() {
           <Route path="/About" element={<Aboutme />} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Contact" element={<ContactMe />} />
+          <Route path="/Projects/HairSalon" element={<HairsalonProject />} />
         </Routes>
       </div>
     </Router>

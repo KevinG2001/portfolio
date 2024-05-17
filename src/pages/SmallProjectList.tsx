@@ -4,6 +4,7 @@ import hairsalonImg from "../assests/websitePics/HairSalonWebsite.png";
 import drinkRecImg from "../assests/websitePics/DrinkRecSite.png";
 import passwordMangerImg from "../assests/websitePics/PasswordManager.png";
 import weatherWebsiteImg from "../assests/websitePics/WeatherWebsite.png";
+import { Link } from "react-router-dom";
 
 function Projects() {
   useEffect(() => {
@@ -48,7 +49,7 @@ function Projects() {
     <div className={Styles.projectContainer}>
       <div className={Styles.projectsWrapper}>
         <ul className={Styles.projectList}>
-          <li className={Styles.projectItem}>
+          <Link className={Styles.projectItem} to="/Projects/HairSalon">
             <div className={Styles.projectName}>Hair Salon</div>
             <div className={Styles.projectName}>Development</div>
             <img
@@ -56,8 +57,8 @@ function Projects() {
               src={hairsalonImg}
               alt="Hair Salon Preview"
             />
-          </li>
-          <li className={Styles.projectItem}>
+          </Link>
+          <Link className={Styles.projectItem} to="/Projects/TeamProject">
             <div className={Styles.projectName}>Team Project</div>
             <div className={Styles.projectName}>Design, Development</div>
             <img
@@ -65,8 +66,8 @@ function Projects() {
               src={drinkRecImg}
               alt="DrinkRec Preview"
             />
-          </li>
-          <li className={Styles.projectItem}>
+          </Link>
+          <Link className={Styles.projectItem} to="/Projects/WeatherWebsite">
             <div className={Styles.projectName}>Weather Website</div>
             <div className={Styles.projectName}>Design, Development</div>
             <img
@@ -74,8 +75,8 @@ function Projects() {
               src={weatherWebsiteImg}
               alt="Weather Website Preview"
             />
-          </li>
-          <li className={Styles.projectItem}>
+          </Link>
+          <Link className={Styles.projectItem} to="/Projects/PasswordManager">
             <div className={Styles.projectName}>Password Manager</div>
             <div className={Styles.projectName}>Design, Development</div>
             <img
@@ -83,7 +84,7 @@ function Projects() {
               src={passwordMangerImg}
               alt="Password Manager Preview"
             />
-          </li>
+          </Link>
         </ul>
       </div>
     </div>
