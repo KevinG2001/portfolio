@@ -9,6 +9,9 @@ import Home from "./pages/Home";
 import Sidebar from "./components/global/Sidebar";
 import sidebarStyle from "./Styling/global/sidebarStyle.module.scss";
 import HairsalonProject from "./components/Projects/HairsalonProject";
+import Teamproject from "./components/Projects/Teamproject";
+import WeatherWebsite from "./components/Projects/WeatherWebsite";
+import PasswordManager from "./components/Projects/PasswordManager";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -56,6 +59,12 @@ function App() {
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Contact" element={<ContactMe />} />
           <Route path="/Projects/HairSalon" element={<HairsalonProject />} />
+          <Route path="/Projects/TeamProject" element={<Teamproject />} />
+          <Route path="/Projects/WeatherWebsite" element={<WeatherWebsite />} />
+          <Route
+            path="/Projects/PasswordManager"
+            element={<PasswordManager />}
+          />
         </Routes>
       </div>
     </Router>
