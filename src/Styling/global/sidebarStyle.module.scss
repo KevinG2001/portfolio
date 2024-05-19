@@ -12,6 +12,7 @@
   height: 100%;
   z-index: 999;
   background-color: $secondary-colour;
+  border-right: 4px solid $white-colour;
   transition: left 0.9s ease, border-top-right-radius 0.9s ease,
     border-bottom-right-radius 0.9s ease;
   border-top-right-radius: 75%;
@@ -98,7 +99,7 @@
   z-index: 1001;
   background-color: grey;
   border-radius: 50%;
-  background-color: $tertiary-colour;
+  background-color: $main-colour;
 }
 
 .open {
@@ -117,7 +118,7 @@
 
 .open .bar1 {
   transform: rotate(-45deg) translate(-9px, 8px);
-  background-color: $tertiary-colour;
+  background-color: $main-colour;
 }
 
 .open .bar2 {
@@ -126,5 +127,5 @@
 
 .open .bar3 {
   transform: rotate(45deg) translate(-8px, -8px);
-  background-color: $tertiary-colour;
+  background-color: $main-colour;
 }
