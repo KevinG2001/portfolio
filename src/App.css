@@ -1,5 +1,5 @@
 .app-container {
-  background-color: #1f2123;
+  background-color: #171717;
   min-height: 100vh; /* Ensure the container takes up at least the height of the viewport */
   box-sizing: border-box;
   position: relative; /* Ensure the container is relative for z-index */
