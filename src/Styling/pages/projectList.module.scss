@@ -32,9 +32,13 @@
   width: 100%;
   font-size: 32px;
   padding: 5% 0%;
-  border-top: 2px solid $main-colour;
+  border-top: 5px solid $main-colour;
   cursor: pointer;
   text-decoration: none;
+  color: $main-colour;
+  &:visited {
+    color: $main-colour;
+  }
 }
 
 .projectPreview {
