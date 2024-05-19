@@ -52,16 +52,18 @@ function Home() {
                     />
                     <div className={Styles.skillTitle}>JavaScript</div>
                   </div>
+                </div>
+                <div className={Styles.stack}>
                   <div className={Styles.skillImgHolder}>
                     <img src={reactLogo} alt="" className={Styles.skillImg} />
                     <div className={Styles.skillTitle}>React</div>
                   </div>
-                </div>
-                <div className={Styles.stack}>
                   <div className={Styles.skillImgHolder}>
                     <img src={sassLogo} alt="" className={Styles.skillImg} />
                     <div className={Styles.skillTitle}>SASS</div>
                   </div>
+                </div>
+                <div className={Styles.stack}>
                   <div className={Styles.skillImgHolder}>
                     <img src={gitLogo} alt="" className={Styles.skillImg} />
                     <div className={Styles.skillTitle}>Git</div>
@@ -70,8 +72,6 @@ function Home() {
                     <img src={mySQLLogo} alt="" className={Styles.skillImg} />
                     <div className={Styles.skillTitle}>mySQL</div>
                   </div>
-                </div>
-                <div className={Styles.stack}>
                   <div className={Styles.skillImgHolder}>
                     <img src={javaLogo} alt="" className={Styles.skillImg} />
                     <div className={Styles.skillTitle}>Java</div>
