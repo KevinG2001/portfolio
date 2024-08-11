@@ -1,0 +1,50 @@
+{
+  "projects": [
+    {
+      "title": "Hair Salon",
+      "description": {
+        "part1": "This is my first frontend project. Its a website for a hair salon, with the design being copied from Debonair. I wanted to do this project to practice working on frontend technologies and maybe backend. I am happy with how it is turning out and looking forward to going back to it and adding a backend with a booking system.",
+        "part2": "The website is developed using React.js and TypeScript, using these technologies to create a dynamic and type-safe application. FOr styling I used SASS which allows for a more modular and maintainable CSS. Along with using React.js the site benefits from a component-based architecture which would make it easier to maintain.",
+        "part3": "Typescript ensures type safety, reducing the likelihood of runtime errors and improving the quality of the code. Along with the SASS enhances the styling process by having features like variables and nesting resulting in a more organized and scalable stylesheet."
+      },
+      "tags": ["Development"],
+      "img": "/websitePics/HairSalonWebsite.png",
+      "livesite": "https://link.com",
+      "githublink": "https://github.com"
+    },
+    {
+      "title": "Password Manager",
+      "description": {
+        "part1": "This is a project I made we made in college for a group project. It is a password Manager that we needed to encrypt the passwords on.",
+        "part2": "We used Python and Anaconda, We used tkinter for the GUI and encryption library for hashing the login pasword and encrypting the passwords in it"
+      },
+      "tags": ["Development", " Design"],
+      "img": "/websitePics/PasswordManager.png",
+      "livesite": "https://link.com",
+      "githublink": "https://github.com"
+    },
+    {
+      "title": "Food and Drink Website",
+      "description": {
+        "part1": "This is a project I made in college for a group project. It is a drink website that recommends drinks depending on the user's preferences.",
+        "part2": "The frontend is made with React.js and TypeScript and styled with SASS.",
+        "part3": "We used Node.js and express.js to create our own REST API and hosted a MySQL database using Microsoft Azure."
+      },
+      "tags": ["Development", " Design"],
+      "img": "/websitePics/DrinkRecSite.png",
+      "livesite": "",
+      "githublink": ""
+    },
+    {
+      "title": "Weather Website",
+      "description": {
+        "part1": "This is a project I made to practice using APIs. You can type in a country or city and it will give you the weather.",
+        "part2": "I used basic HTML and JavaScript and styled it using CSS."
+      },
+      "tags": ["Development", " Design"],
+      "img": "/websitePics/WeatherWebsite.png",
+      "livesite": "https://keving2001.github.io/weatherWebsite/",
+      "githublink": "https://github.com/KevinG2001/weatherWebsite"
+    }
+  ]
+}

@@ -2,7 +2,7 @@ import styles from "../Styling/pages/homeStyles.module.scss";
 import profilePic from "../assests/profilePic.jpeg";
 import planetImg from "../assests/planet-earth-svgrepo-com.svg";
 import AboutMe from "../pages/Aboutme";
-import ProjectsList from "./SmallProjectList";
+import ProjectsList from "../components/ProjectList";
 
 function Home() {
   return (
