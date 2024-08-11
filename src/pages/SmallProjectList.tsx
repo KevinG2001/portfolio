@@ -46,14 +46,16 @@ function ProjectList() {
     <div className={Styles.projectContainer}>
       <div className={Styles.projectsWrapper}>
         <ul className={Styles.projectList}>
-          {projectsData.projects.map((project, index) => (
+          {projectsData.projects.slice(0, 2).map((project, index) => (
             <Link
               key={index}
               className={Styles.projectItem}
               to={`/Projects/${project.title.replace(/\s+/g, "")}`}
             >
               <div className={Styles.projectName}>{project.title}</div>
-              <div className={Styles.projectTags}>{project.tags}</div>
+              <div className={Styles.projectTags}>
+                {project.tags?.join(", ")}
+              </div>
               <img
                 className={Styles.projectPreview}
                 src={project.img}
