@@ -6,9 +6,14 @@ import cv from "../../assests/CV_2023.pdf";
 
 interface SidebarProps {
   showSidebar: boolean;
+  setShowSidebar: (show: boolean) => void;
 }
 
-function Sidebar({ showSidebar }: SidebarProps) {
+function Sidebar({ showSidebar, setShowSidebar }: SidebarProps) {
+  const handleLinkClick = () => {
+    setShowSidebar(false);
+  };
+
   return (
     <div className={`${Style.container} ${showSidebar ? Style.show : ""}`}>
       <div className={Style.wrapper} id={Style.hideThis}>
@@ -16,16 +21,28 @@ function Sidebar({ showSidebar }: SidebarProps) {
       </div>
       <div className={Style.wrapper}>
         <div className={Style.linkWrapper}>
-          <Link to="/About" className={Style.sidebarBtn}>
+          <Link
+            to="/About"
+            className={Style.sidebarBtn}
+            onClick={handleLinkClick}
+          >
             About
           </Link>
-          <Link to="Projects" className={Style.sidebarBtn}>
+          <Link
+            to="/Projects"
+            className={Style.sidebarBtn}
+            onClick={handleLinkClick}
+          >
             Projects
           </Link>
-          <Link to="/Contact" className={Style.sidebarBtn}>
+          <Link
+            to="/Contact"
+            className={Style.sidebarBtn}
+            onClick={handleLinkClick}
+          >
             Contact
           </Link>
-          <a className={Style.sidebarBtn} href={cv}>
+          <a className={Style.sidebarBtn} href={cv} onClick={handleLinkClick}>
             CV
           </a>
         </div>
@@ -37,10 +54,15 @@ function Sidebar({ showSidebar }: SidebarProps) {
             <a
               href="https://www.linkedin.com/in/kevinglennon01/"
               className={Style.socialImg}
+              onClick={handleLinkClick}
             >
               <img src={linkdinImg} alt="" className={Style.socialImgTwo} />
             </a>
-            <a href="https://github.com/KevinG2001" className={Style.socialImg}>
+            <a
+              href="https://github.com/KevinG2001"
+              className={Style.socialImg}
+              onClick={handleLinkClick}
+            >
               <img src={githubImg} alt="" className={Style.socialImgTwo} />
             </a>
           </div>
