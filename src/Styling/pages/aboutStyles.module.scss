@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  // background-color: $main-colour;
   color: white;
   font-size: 1.4rem;
   box-sizing: border-box;
@@ -78,26 +77,22 @@ span {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
-    background-color: $main-colour;
     color: white;
     font-size: 1.4rem;
   }
 
   .aboutmeWrapper {
-    margin: 2% 2% 20% 2%;
-    width: 94%;
+    margin: 2%;
+    width: 80%;
   }
 
   .paragraph {
-    background-color: $tertiary-colour;
     border-radius: 15px;
     padding: 3%;
     margin: 4% 0% 10% 0%;
   }
 
   .skillImgWrapper {
-    background-color: $main-colour;
     border-radius: 15px;
     margin-top: 2%;
     text-align: center;
@@ -106,5 +101,34 @@ span {
   .skillImg {
     width: 6%;
     margin: 1% 2%;
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    background-color: $quaternary-colour;
+  }
+
+  .paragraph {
+    background-color: $main-colour;
+  }
+  .skillImgWrapper {
+  }
+
+  .skillImgHolder {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 32px 32px;
+  }
+
+  .skillImg {
+    display: none;
+  }
+
+  .stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -128,3 +128,9 @@
   transform: rotate(45deg) translate(-8px, -8px);
   background-color: $tertiary-colour;
 }
+
+@media (max-width: 390px) {
+  .container {
+    width: 100%;
+  }
+}

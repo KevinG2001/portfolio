@@ -27,8 +27,8 @@
 .sidePanel {
   display: flex;
   align-items: center;
-  width: 10%;
-  height: 10%;
+  width: 20%;
+  height: 15%;
   font-size: 28px;
   padding: 1%;
   background-color: $main-colour;
@@ -48,7 +48,7 @@
   }
 }
 
-$borderRadius: 50%;
+$borderRadius: 25%;
 
 #left {
   border-top-right-radius: $borderRadius;
@@ -69,4 +69,58 @@ $borderRadius: 50%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .landingWrapper {
+    height: 100vh;
+  }
+  .profilePic {
+    width: 25%;
+  }
+}
+
+@media (max-width: 390px) {
+  .landingWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 91vh;
+  }
+
+  .profilePic {
+    width: 75%;
+    z-index: 2;
+    position: relative;
+  }
+
+  .sidePanel {
+    position: absolute;
+    width: 50%;
+    background-color: $main-colour;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color: white;
+    font-size: 16px;
+    z-index: 1;
+  }
+
+  #left {
+    top: 0;
+    left: 0;
+    justify-content: flex-start;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  #right {
+    bottom: 0;
+    right: 0;
+    justify-content: flex-end;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
 }
