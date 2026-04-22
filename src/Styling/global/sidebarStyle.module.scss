@@ -3,20 +3,26 @@
 .container {
   position: fixed;
   top: 0;
-  left: -400px;
+  left: 0;
+  transform: translateX(-100%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 20%;
-  height: 100%;
+  max-width: 320px;
+  min-width: 260px;
+  height: 100vh;
   z-index: 999;
   background-color: $secondary-colour;
-  transition: left 0.9s ease, border-top-right-radius 0.9s ease,
-    border-bottom-right-radius 0.9s ease;
+  transition:
+    transform 0.4s ease,
+    border-top-right-radius 0.4s ease,
+    border-bottom-right-radius 0.4s ease;
   border-top-right-radius: 75%;
   border-bottom-right-radius: 75%;
   color: $white-colour;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -37,7 +43,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -56,10 +61,11 @@
 #hideThis {
   opacity: 0;
 }
+
 .show {
-  left: 0;
-  border-top-right-radius: 0%;
-  border-bottom-right-radius: 0%;
+  transform: translateX(0);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .socialImg {
@@ -76,7 +82,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10%; /* Adjusted margin for spacing from the bottom */
+  margin-bottom: 10%;
 }
 
 .socialTitle {
@@ -96,7 +102,6 @@
   height: 50px;
   cursor: pointer;
   z-index: 1001;
-  background-color: grey;
   border-radius: 50%;
   background-color: $tertiary-colour;
 }
@@ -131,6 +136,8 @@
 
 @media (max-width: 390px) {
   .container {
-    width: 100%;
+    width: 85%;
+    max-width: none;
+    min-width: 0;
   }
 }
