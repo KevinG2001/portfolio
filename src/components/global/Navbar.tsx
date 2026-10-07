@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import profilePic from "../../assests/profilePic.jpeg";
 import linkedinLogo from "../../assests/contact/linkedin.svg";
 import githubLogo from "../../assests/contact/github.svg";
 import cv from "../../assests/CV_2023.pdf";
@@ -35,9 +34,12 @@ function Navbar() {
   return (
     <nav className={navStyles.navContainer}>
       <div className={navStyles.navTitle}>
-        <Link to="/">
-          <img src={profilePic} alt="" className={navStyles.navLogo} />
-        </Link>
+        <div className={navStyles.navTitleBox}>
+          <div className={navStyles.navTitleTextStation}>K1</div>
+          <div className={navStyles.navTitleTextDesc}>Now Boarding</div>
+        </div>
+
+        {/* Burger Menu */}
         <div className={navStyles.burgerMenu} onClick={toggleBurgerMenu}>
           <div
             className={`${navStyles.burgerLine} ${
