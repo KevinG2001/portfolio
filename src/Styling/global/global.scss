@@ -1,0 +1,21 @@
+:root {
+	--concrete: #e4e2dc;
+	--ticket: #fafaf7;
+	--tarmac: #17171b;
+	--kerb: #55555c;
+	--housing: #0b0b0d;
+	--led: #ffb21a;
+	--stop-red: #c2320f;
+	--route: #1d3fbf;
+
+	--font-sign: "Big Shoulders Display", "Arial Narrow", sans-serif;
+	--font-display: "Doto", ui-monospace, monospace;
+	--font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+	margin: 0;
+	background: var(--concrete);
+	color: var(--tarmac);
+	font-family: var(--font-body);
+}

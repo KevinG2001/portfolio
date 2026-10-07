@@ -1,126 +1,124 @@
-@import "../global/default.module.scss";
-
 .container {
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  color: white;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	color: white;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100%;
 }
 
 .landingWrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 850px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 850px;
 }
 .sidePanel {
-  display: flex;
-  align-items: center;
-  width: 20%;
-  height: 15%;
-  font-size: 28px;
-  padding: 1%;
-  background-color: white;
+	display: flex;
+	align-items: center;
+	width: 20%;
+	height: 15%;
+	font-size: 28px;
+	padding: 1%;
+	background-color: white;
 }
 .planetImg {
-  width: 50px;
-  margin: 5%;
-  animation: rotate 10s linear infinite;
+	width: 50px;
+	margin: 5%;
+	animation: rotate 10s linear infinite;
 }
 
 @keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 $borderRadius: 25%;
 
 #left {
-  border-top-right-radius: $borderRadius;
-  border-bottom-right-radius: $borderRadius;
+	border-top-right-radius: $borderRadius;
+	border-bottom-right-radius: $borderRadius;
 }
 
 #right {
-  justify-content: end;
-  border-top-left-radius: $borderRadius;
-  border-bottom-left-radius: $borderRadius;
+	justify-content: end;
+	border-top-left-radius: $borderRadius;
+	border-bottom-left-radius: $borderRadius;
 }
 .profilePic {
-  border-radius: 50%;
+	border-radius: 50%;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 @media (max-width: 768px) {
-  .landingWrapper {
-    height: 100vh;
-  }
-  .profilePic {
-    width: 25%;
-  }
+	.landingWrapper {
+		height: 100vh;
+	}
+	.profilePic {
+		width: 25%;
+	}
 }
 
 @media (max-width: 390px) {
-  .landingWrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 91vh;
-  }
+	.landingWrapper {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 91vh;
+	}
 
-  .profilePic {
-    width: 75%;
-    z-index: 2;
-    position: relative;
-  }
+	.profilePic {
+		width: 75%;
+		z-index: 2;
+		position: relative;
+	}
 
-  .sidePanel {
-    position: absolute;
-    width: 50%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    color: white;
-    font-size: 16px;
-    z-index: 1;
-  }
+	.sidePanel {
+		position: absolute;
+		width: 50%;
+		background-color: white;
+		display: flex;
+		align-items: center;
+		padding: 0 10px;
+		color: white;
+		font-size: 16px;
+		z-index: 1;
+	}
 
-  #left {
-    top: 0;
-    left: 0;
-    justify-content: flex-start;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
+	#left {
+		top: 0;
+		left: 0;
+		justify-content: flex-start;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
 
-  #right {
-    bottom: 0;
-    right: 0;
-    justify-content: flex-end;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-  }
+	#right {
+		bottom: 0;
+		right: 0;
+		justify-content: flex-end;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+	}
 }

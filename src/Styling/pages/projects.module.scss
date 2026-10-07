@@ -1,136 +1,134 @@
-@import "../../Styling/global/default.module.scss";
-
 .projectContainer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: white;
-  font-size: 1.2rem;
-  margin-top: 1%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: white;
+	font-size: 1.2rem;
+	margin-top: 1%;
 }
 .container {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  height: auto;
-  background-color: white;
-  border-radius: 15px;
-  color: white;
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	height: auto;
+	background-color: white;
+	border-radius: 15px;
+	color: white;
 }
 
 .projectImg {
-  width: 100%;
-  height: inherit;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+	width: 100%;
+	height: inherit;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
 }
 .title {
-  display: flex;
-  margin: 1% 2%;
-  width: 80%;
-  justify-content: center;
-  color: white;
-  border-bottom: 2px solid white;
+	display: flex;
+	margin: 1% 2%;
+	width: 80%;
+	justify-content: center;
+	color: white;
+	border-bottom: 2px solid white;
 }
 .descriptionWrapper {
-  width: 100%;
-  font-size: 1.6rem;
+	width: 100%;
+	font-size: 1.6rem;
 
-  .paragraph {
-    margin: 5%;
-  }
-  .btnWrapper {
-    display: flex;
-    justify-content: space-evenly;
+	.paragraph {
+		margin: 5%;
+	}
+	.btnWrapper {
+		display: flex;
+		justify-content: space-evenly;
 
-    .btn {
-      cursor: pointer;
-      width: auto;
-      padding: 16px 32px;
-      color: white;
-      background-color: white;
-      font-weight: bold;
-      text-decoration: none;
-      border: none;
-      border-radius: 15px;
-      margin-bottom: 5%;
-    }
-    .btn:hover {
-      color: white;
-      box-shadow: 0px 0px 15px 3px white;
-    }
-    .btn:visited {
-      color: white;
-    }
-  }
+		.btn {
+			cursor: pointer;
+			width: auto;
+			padding: 16px 32px;
+			color: white;
+			background-color: white;
+			font-weight: bold;
+			text-decoration: none;
+			border: none;
+			border-radius: 15px;
+			margin-bottom: 5%;
+		}
+		.btn:hover {
+			color: white;
+			box-shadow: 0px 0px 15px 3px white;
+		}
+		.btn:visited {
+			color: white;
+		}
+	}
 }
 
 @media (max-width: 768px) {
-  .projectContainer {
-    width: 100%;
-  }
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 96%;
-    height: auto;
-    background-color: white;
-    border-radius: 15px;
-    color: white;
-  }
+	.projectContainer {
+		width: 100%;
+	}
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		width: 96%;
+		height: auto;
+		background-color: white;
+		border-radius: 15px;
+		color: white;
+	}
 
-  .projectImg {
-    width: 100%;
-    height: inherit;
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-  .title {
-    margin: 8% 2%;
-    width: 96%;
-    color: white;
-    border-bottom: 2px solid white;
-  }
-  .descriptionWrapper {
-    margin: 1%;
-    width: 96%;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    font-size: 1.2rem;
+	.projectImg {
+		width: 100%;
+		height: inherit;
+		border-bottom-left-radius: 0px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+	.title {
+		margin: 8% 2%;
+		width: 96%;
+		color: white;
+		border-bottom: 2px solid white;
+	}
+	.descriptionWrapper {
+		margin: 1%;
+		width: 96%;
+		justify-content: center; /* Center vertically */
+		align-items: center; /* Center horizontally */
+		font-size: 1.2rem;
 
-    .paragraph {
-      margin: 5%;
-    }
-    .btnWrapper {
-      display: flex;
-      justify-content: space-evenly;
+		.paragraph {
+			margin: 5%;
+		}
+		.btnWrapper {
+			display: flex;
+			justify-content: space-evenly;
 
-      .btn {
-        cursor: pointer;
-        width: auto;
-        padding: 16px 32px;
-        color: white;
-        background-color: white;
-        font-weight: bold;
-        text-decoration: none;
-        border: none;
-        border-radius: 15px;
-      }
-      .btn:hover {
-        color: white;
-        box-shadow: 0px 0px 15px 3px white;
-      }
-      .btn:visited {
-        color: white;
-      }
-    }
-  }
+			.btn {
+				cursor: pointer;
+				width: auto;
+				padding: 16px 32px;
+				color: white;
+				background-color: white;
+				font-weight: bold;
+				text-decoration: none;
+				border: none;
+				border-radius: 15px;
+			}
+			.btn:hover {
+				color: white;
+				box-shadow: 0px 0px 15px 3px white;
+			}
+			.btn:visited {
+				color: white;
+			}
+		}
+	}
 }

@@ -1,93 +1,91 @@
-@import "../global/default.module.scss";
-
 .container {
-  width: 40%;
-  height: 700px;
-  margin: 1% 5%;
-  color: white;
+	width: 40%;
+	height: 700px;
+	margin: 1% 5%;
+	color: white;
 }
 .container span {
-  color: white;
+	color: white;
 }
 
 .contactForm {
-  // margin: 80px auto;
-  display: flex;
-  max-width: 500px;
-  width: 100%;
-  height: 500px;
-  background-color: white;
-  justify-content: space-evenly;
-  flex-direction: column;
-  border-radius: 15px;
+	// margin: 80px auto;
+	display: flex;
+	max-width: 500px;
+	width: 100%;
+	height: 500px;
+	background-color: white;
+	justify-content: space-evenly;
+	flex-direction: column;
+	border-radius: 15px;
 }
 
 .lineSeperator {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 .inputGroup {
-  position: relative;
-  justify-content: space-evenly;
-  --x: 16px;
-  --y: 4px;
+	position: relative;
+	justify-content: space-evenly;
+	--x: 16px;
+	--y: 4px;
 }
 
 input {
-  outline: none;
-  width: 100%;
-  padding: 3%;
-  height: auto;
-  background-color: white;
-  border: 2px solid white;
-  border-radius: 15px;
+	outline: none;
+	width: 100%;
+	padding: 3%;
+	height: auto;
+	background-color: white;
+	border: 2px solid white;
+	border-radius: 15px;
 }
 
 label {
-  position: absolute;
-  color: black;
-  left: var(--x);
-  top: var(--y);
-  border: 1px solid white;
-  background-color: transparent;
-  border: none;
+	position: absolute;
+	color: black;
+	left: var(--x);
+	top: var(--y);
+	border: 1px solid white;
+	background-color: transparent;
+	border: none;
 }
 
 input:focus ~ label,
 input:valid ~ label {
-  top: calc(var(--y) * -2);
-  font-size: 14px;
-  background-color: white;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-  transition:
-    top 300ms,
-    border-color 300ms;
+	top: calc(var(--y) * -2);
+	font-size: 14px;
+	background-color: white;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	transition:
+		top 300ms,
+		border-color 300ms;
 }
 
 textarea {
-  width: 400px;
-  height: 250px;
+	width: 400px;
+	height: 250px;
 }
 
 textarea {
-  padding-left: 20px 20px 0px 0px;
-  outline: none;
-  border: 2px solid white;
-  background-color: white;
-  border-radius: 15px;
+	padding-left: 20px 20px 0px 0px;
+	outline: none;
+	border: 2px solid white;
+	background-color: white;
+	border-radius: 15px;
 }
 
 textarea:focus ~ label {
-  top: calc(var(--y) * -1.5);
-  font-size: 14px;
-  background-color: white;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-  transition:
-    top 300ms,
-    border-color 300ms;
+	top: calc(var(--y) * -1.5);
+	font-size: 14px;
+	background-color: white;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	transition:
+		top 300ms,
+		border-color 300ms;
 }
 
 //This code works

@@ -1,143 +1,141 @@
-@import "../global/default.module.scss";
-
 .container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translateX(-100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 20%;
-  max-width: 320px;
-  min-width: 260px;
-  height: 100vh;
-  z-index: 999;
-  background-color: white;
-  transition:
-    transform 0.4s ease,
-    border-top-right-radius 0.4s ease,
-    border-bottom-right-radius 0.4s ease;
-  border-top-right-radius: 75%;
-  border-bottom-right-radius: 75%;
-  color: white;
-  overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transform: translateX(-100%);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 20%;
+	max-width: 320px;
+	min-width: 260px;
+	height: 100vh;
+	z-index: 999;
+	background-color: white;
+	transition:
+		transform 0.4s ease,
+		border-top-right-radius 0.4s ease,
+		border-bottom-right-radius 0.4s ease;
+	border-top-right-radius: 75%;
+	border-bottom-right-radius: 75%;
+	color: white;
+	overflow: hidden;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 100%;
-  height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	height: 100%;
 }
 
 .linkWrapper {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
 }
 
 .sidebarBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  color: white;
-  text-decoration: none !important;
-  font-size: 2rem;
-  padding: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	color: white;
+	text-decoration: none !important;
+	font-size: 2rem;
+	padding: 5%;
 
-  &:hover {
-    background-color: red;
-    color: $secondary-sign-bg-color;
-    font-weight: bold;
-  }
+	&:hover {
+		background-color: red;
+		color: white;
+		font-weight: bold;
+	}
 }
 
 #hideThis {
-  opacity: 0;
+	opacity: 0;
 }
 
 .show {
-  transform: translateX(0);
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+	transform: translateX(0);
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
 }
 
 .socialImg {
-  width: 50px;
+	width: 50px;
 }
 
 .profileImg {
-  width: 100px;
-  border-radius: 50px;
+	width: 100px;
+	border-radius: 50px;
 }
 
 .socialWrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10%;
 }
 
 .socialTitle {
-  width: 100%;
-  text-align: center;
-  font-size: 24px;
-  border-bottom: 2px solid;
-  margin: 5%;
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	border-bottom: 2px solid;
+	margin: 5%;
 }
 
 .floatingBtn {
-  position: fixed;
-  top: 25px;
-  left: 25px;
-  padding: 10px 20px;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  z-index: 1001;
-  border-radius: 50%;
-  background-color: white;
+	position: fixed;
+	top: 25px;
+	left: 25px;
+	padding: 10px 20px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	z-index: 1001;
+	border-radius: 50%;
+	background-color: white;
 }
 
 .open {
-  background-color: white;
+	background-color: white;
 }
 
 .bar1,
 .bar2,
 .bar3 {
-  width: 100%;
-  height: 3px;
-  background-color: white;
-  margin: 10px 0px;
-  transition: 0.4s;
+	width: 100%;
+	height: 3px;
+	background-color: white;
+	margin: 10px 0px;
+	transition: 0.4s;
 }
 
 .open .bar1 {
-  transform: rotate(-45deg) translate(-9px, 8px);
-  background-color: white;
+	transform: rotate(-45deg) translate(-9px, 8px);
+	background-color: white;
 }
 
 .open .bar2 {
-  opacity: 0;
+	opacity: 0;
 }
 
 .open .bar3 {
-  transform: rotate(45deg) translate(-8px, -8px);
-  background-color: white;
+	transform: rotate(45deg) translate(-8px, -8px);
+	background-color: white;
 }
 
 @media (max-width: 390px) {
-  .container {
-    width: 85%;
-    max-width: none;
-    min-width: 0;
-  }
+	.container {
+		width: 85%;
+		max-width: none;
+		min-width: 0;
+	}
 }
