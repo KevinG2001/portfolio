@@ -2,51 +2,113 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	font-size: 1.2rem;
+	font-size: 1.6rem;
+	color: white;
+}
+
+.heading {
+	margin: 0 0 16px;
+	font-family: var(--font-sign);
+	font-weight: 900;
+	font-size: clamp(48px, 6vw, 88px);
+	line-height: 0.9;
+	text-transform: uppercase;
+	color: var(--tarmac);
 }
 
 .projectsWrapper {
-	display: flex;
-	width: 100%;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 0px;
+	background-color: var(--housing);
+	margin: 0 2% 0 0;
+	overflow-x: auto;
 }
 
 .projectList {
+	width: 100%;
+	min-width: 760px;
+	padding: 0;
+	border-collapse: collapse;
+}
+
+.projectListHeaderCell,
+.projectListCell {
+	text-align: left;
+	vertical-align: top;
+	padding: 20px;
+}
+
+.projectListHeaderCell {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	font-family: var(--font-sign);
+	font-weight: 800;
+	font-size: 17px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #b9b9c0;
+
+	&:first-child {
+		padding-left: 24px;
+	}
+}
+
+.projectListCell {
+	border-top: 1px solid #2a2a30;
+
+	&.routeCell {
+		width: 1%;
+		white-space: nowrap;
+		padding-left: 24px;
+		font-family: var(--font-display);
+		font-weight: 900;
+		font-size: 34px;
+		line-height: 1;
+		color: var(--led);
+	}
+
+	&.callingAtCell {
+		padding-top: 24px;
+		color: #c9c9cf;
+		font-size: 17px;
+		line-height: 1.5;
+	}
+
+	&.statusCell {
+		width: 1%;
+		white-space: nowrap;
+		padding-top: 24px;
+		padding-right: 24px;
+		font-family: var(--font-display);
+		font-weight: 900;
+		font-size: 19px;
+		letter-spacing: 1px;
+		color: #b9b9c0;
+	}
+}
+
+.projectTitleWrapper {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 80%;
-	padding: 0px;
+	gap: 6px;
 }
 
-.projectItem {
-	position: relative;
-	list-style-type: none;
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	font-size: 32px;
-	padding: 5% 0%;
-	border-top: 2px solid white;
-	cursor: pointer;
+.projectName {
+	font-family: var(--font-sign);
+	font-weight: 800;
+	font-size: 28px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	color: var(--ticket);
 	text-decoration: none;
+
+	&:hover {
+		color: var(--led);
+		text-decoration: underline;
+	}
 }
 
-.projectPreview {
-	display: none;
-	position: fixed;
-	width: 250px;
-	height: 150px;
-	background-color: #fff;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-	pointer-events: none;
-	z-index: 9999;
-}
-
-.projectItem:hover .projectPreview {
-	display: block;
+.projectDesc {
+	font-size: 17px;
+	line-height: 1.45;
+	color: #c9c9cf;
+	max-width: 460px;
 }
