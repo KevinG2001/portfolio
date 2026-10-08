@@ -1,0 +1,148 @@
+.finalTicketContainer {
+	width: 100%;
+}
+
+.finalTicketTitle {
+	margin: 0 0 24px;
+	font-family: var(--font-sign);
+	font-weight: 900;
+	font-size: clamp(48px, 6vw, 88px);
+	line-height: 0.9;
+	text-transform: uppercase;
+	color: var(--tarmac);
+}
+
+.finalTicketWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	width: 95%;
+	background-color: var(--ticket);
+	font-family: var(--font-body);
+}
+
+.finalTicketMain {
+	flex: 3 1 480px;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding: 32px;
+}
+
+.finalTicketHeader {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 40px;
+}
+
+.finalTicketHeaderItem {
+	font-family: var(--font-sign);
+	font-weight: 800;
+	font-size: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--kerb);
+}
+
+.finalTicketInfo {
+	margin: 0;
+	max-width: 620px;
+	font-size: 22px;
+	line-height: 1.5;
+	color: var(--tarmac);
+}
+
+.finalTicketEmail {
+	font-family: var(--font-sign);
+	font-weight: 900;
+	font-size: clamp(32px, 4vw, 52px);
+	line-height: 1;
+	text-transform: uppercase;
+	color: var(--stop-red);
+	overflow-wrap: anywhere;
+}
+
+.finalTicketButtons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.finalTicketButton {
+	min-height: 48px;
+	padding: 0 20px;
+	background: none;
+	border: 3px solid var(--tarmac);
+	color: var(--tarmac);
+	font-family: var(--font-sign);
+	font-weight: 800;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	&:hover {
+		background: var(--tarmac);
+		color: var(--ticket);
+	}
+}
+
+.finalTicketStub {
+	flex: 1 1 240px;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 24px;
+	padding: 32px;
+	border-left: 3px dashed #c9c6be;
+}
+
+.stubText {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.stubLabel {
+	font-family: var(--font-sign);
+	font-weight: 800;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--kerb);
+}
+
+.stubTitle {
+	font-family: var(--font-sign);
+	font-weight: 900;
+	font-size: 40px;
+	line-height: 0.95;
+	text-transform: uppercase;
+	color: var(--tarmac);
+}
+
+.barcode {
+	height: 64px;
+	background: repeating-linear-gradient(
+		90deg,
+		var(--tarmac) 0 3px,
+		transparent 3px 6px,
+		var(--tarmac) 6px 7px,
+		transparent 7px 11px,
+		var(--tarmac) 11px 15px,
+		transparent 15px 17px
+	);
+}
+
+@media (max-width: 760px) {
+	.finalTicketMain,
+	.finalTicketStub {
+		padding: 24px 20px;
+	}
+
+	.finalTicketStub {
+		border-left: 0;
+		border-top: 3px dashed #c9c6be;
+	}
+}

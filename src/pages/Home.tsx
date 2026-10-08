@@ -5,6 +5,7 @@ import ContactMe from "./ContactMe";
 import Stop from "../components/Stop";
 import MainProjects from "./MainProjects";
 import Notes from "./Notes";
+import FinalTicket from "./FinalTicket";
 
 function Home() {
 	return (
@@ -25,7 +26,7 @@ function Home() {
 			</Stop>
 
 			<Stop id="contact" position="last" label="Stop 04 · Contact">
-				<ContactMe />
+				<FinalTicket />
 			</Stop>
 		</main>
 	);
