@@ -6,6 +6,7 @@ import Stop from "../components/Stop";
 import MainProjects from "./MainProjects";
 import Notes from "./Notes";
 import FinalTicket from "./FinalTicket";
+import Footer from "../components/Footer";
 
 function Home() {
 	return (
@@ -28,6 +29,7 @@ function Home() {
 			<Stop id="contact" position="last" label="Stop 04 · Contact">
 				<FinalTicket />
 			</Stop>
+			<Footer />
 		</main>
 	);
 }
