@@ -1,4 +1,3 @@
-import React from "react";
 import Styles from "../Styling/pages/mainProjectStyles.module.scss";
 
 type Project = {

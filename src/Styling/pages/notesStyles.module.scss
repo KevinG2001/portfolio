@@ -1,0 +1,53 @@
+.notesContainer {
+	display: flex;
+	width: 100%;
+}
+
+.notesWrapper {
+	width: 40%;
+}
+.noteTitle {
+	font-size: 3rem;
+	font-family: var(--font-sign);
+}
+
+.noteDescription {
+	font-size: 1.25rem;
+	font-family: var(--font-body);
+}
+
+.timelineWrapper {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	border-top: 2px solid var(--tarmac);
+	font-size: 1.25rem;
+	margin-left: 4%;
+}
+
+.timelineItem {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 2rem;
+	border-bottom: 1px solid var(--tarmac);
+}
+
+.timelineYear {
+	font-family: var(--font-display);
+	margin-right: 1rem;
+	font-size: 2rem;
+}
+
+.timelineStack {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 1rem;
+}
+.timelineTool {
+	padding: 4px 8px;
+	font-family: var(--font-body);
+	border: 1px solid var(--tarmac);
+}
