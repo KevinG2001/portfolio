@@ -1,0 +1,80 @@
+$marker: 44px;
+$marker-top: 40px;
+$line: 10px;
+$rail-x: 30px; // where the marker sits inside the rail
+
+.stop {
+	display: flex;
+}
+
+.rail {
+	position: relative;
+	flex: 0 0 104px;
+
+	// this section's piece of the line
+	&::before {
+		content: "";
+		position: absolute;
+		left: $rail-x + ($marker - $line) / 2; // centred under the marker
+		width: $line;
+		top: 0;
+		bottom: 0;
+		background: var(--route);
+	}
+}
+
+// first stop: line starts at the centre of the circle
+.first::before {
+	top: $marker-top + $marker / 2;
+}
+
+// last stop: line ends at the centre of the square
+.last::before {
+	bottom: auto;
+	height: $marker-top + $marker / 2;
+}
+
+.marker {
+	position: absolute;
+	left: $rail-x;
+	top: $marker-top;
+	width: $marker;
+	height: $marker;
+	box-sizing: border-box;
+	border-radius: 50%;
+	background: var(--ticket);
+	border: 9px solid var(--tarmac);
+	z-index: 1; // sits on top of the line
+}
+
+.last .marker {
+	border-radius: 0;
+	background: var(--tarmac);
+}
+
+.content {
+	flex: 1;
+	min-width: 0;
+	padding: $marker-top 0 96px; // spacing goes INSIDE the section
+}
+
+@media (max-width: 760px) {
+	.rail {
+		display: none;
+	}
+}
+
+.label {
+	// same height as the marker, so the text centres on the circle
+	height: $marker;
+	display: flex;
+	align-items: center;
+	margin: 0 0 16px;
+
+	font-family: var(--font-sign);
+	font-weight: 800;
+	font-size: 20px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: var(--kerb);
+}

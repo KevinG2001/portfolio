@@ -1,13 +1,13 @@
 .app-container {
-  background-color: #1f2123;
-  min-height: 100vh; /* Ensure the container takes up at least the height of the viewport */
-  box-sizing: border-box;
-  position: relative; /* Ensure the container is relative for z-index */
+	background-color: #e4e2dc;
+	min-height: 100vh; /* Ensure the container takes up at least the height of the viewport */
+	box-sizing: border-box;
+	position: relative; /* Ensure the container is relative for z-index */
 }
 
 @media (max-width: 768px) {
-  .app-container {
-    display: flex;
-    flex-direction: column;
-  }
+	.app-container {
+		display: flex;
+		flex-direction: column;
+	}
 }

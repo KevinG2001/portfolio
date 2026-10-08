@@ -14,65 +14,62 @@ import WeatherWebsite from "./components/Projects/WeatherWebsite";
 import PasswordManager from "./components/Projects/PasswordManager";
 
 function App() {
-  const [showButton, setShowButton] = useState(false);
-  const [showSidebar, setShowSidebar] = useState(false);
+	const [showButton, setShowButton] = useState(false);
+	const [showSidebar, setShowSidebar] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setShowButton(scrollPosition > 0); // Show button when scrolling down
-    };
+	useEffect(() => {
+		const handleScroll = () => {
+			const scrollPosition = window.scrollY;
+			setShowButton(scrollPosition > 0);
+		};
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 
-  const toggleSidebar = () => {
-    setShowSidebar(!showSidebar);
-  };
+	const toggleSidebar = () => {
+		setShowSidebar(!showSidebar);
+	};
 
-  return (
-    <Router>
-      <div className="app-container">
-        {/* Show Navbar */}
-        <Navbar />
-        {/* Show Button if you scroll down */}
-        {showButton && (
-          <div
-            className={`${sidebarStyle.floatingBtn} ${
-              showSidebar ? sidebarStyle.open : ""
-            }`}
-            onClick={toggleSidebar}
-          >
-            <div className={sidebarStyle.bar1}></div>
-            <div className={sidebarStyle.bar2}></div>
-            <div className={sidebarStyle.bar3}></div>
-          </div>
-        )}
-        {/* Show sidebar if you click the button */}
-        <Sidebar
-          showSidebar={showSidebar}
-          closeSidebar={() => setShowSidebar(false)}
-        />
+	return (
+		<Router>
+			<div className="app-container">
+				<Navbar />
+				{showButton && (
+					<div
+						className={`${sidebarStyle.floatingBtn} ${
+							showSidebar ? sidebarStyle.open : ""
+						}`}
+						onClick={toggleSidebar}
+					>
+						<div className={sidebarStyle.bar1}></div>
+						<div className={sidebarStyle.bar2}></div>
+						<div className={sidebarStyle.bar3}></div>
+					</div>
+				)}
+				<Sidebar
+					showSidebar={showSidebar}
+					closeSidebar={() => setShowSidebar(false)}
+				/>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/About" element={<Aboutme />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/Contact" element={<ContactMe />} />
-          <Route path="/Projects/HairSalon" element={<HairsalonProject />} />
-          <Route path="/Projects/TeamProject" element={<Teamproject />} />
-          <Route path="/Projects/WeatherWebsite" element={<WeatherWebsite />} />
-          <Route
-            path="/Projects/PasswordManager"
-            element={<PasswordManager />}
-          />
-        </Routes>
-      </div>
-    </Router>
-  );
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/About" element={<Aboutme />} />
+					<Route path="/Projects" element={<Projects />} />
+					<Route path="/Contact" element={<ContactMe />} />
+					<Route path="/Projects/HairSalon" element={<HairsalonProject />} />
+					<Route path="/Projects/TeamProject" element={<Teamproject />} />
+					<Route path="/Projects/WeatherWebsite" element={<WeatherWebsite />} />
+					<Route
+						path="/Projects/PasswordManager"
+						element={<PasswordManager />}
+					/>
+				</Routes>
+			</div>
+		</Router>
+	);
 }
 
 export default App;

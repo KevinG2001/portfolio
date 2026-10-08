@@ -1,132 +1,36 @@
 .container {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-	color: white;
+	width: 40%;
 	font-size: 1.4rem;
 	box-sizing: border-box;
 	margin-top: 2%;
-}
-
-.underContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.aboutmeWrapper {
-	width: 80%;
-	margin: 2%;
-	justify-content: center;
-	align-items: center;
+	font-family: var(--font-body);
 }
 
 .title {
-	margin: 0%;
+	line-height: 1;
+	font-size: 4.5rem;
 }
+
 .paragraph {
-	background-color: white;
 	border-radius: 15px;
 	padding: 1%;
 }
 
-.stack {
-	display: flex;
-	flex-direction: column;
-	width: 25%;
-}
+.button {
+	background-color: var(--led);
+	font-family: var(--font-sign);
+	font-size: 1.5rem;
+	margin: 2% 2% 0% 0%;
+	padding: 1% 2%;
+	border: none;
+	cursor: pointer;
+	color: #ffffff;
 
-.skillImgWrapper {
-	background-color: white;
-	border-radius: 15px;
-	margin-top: 2%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-}
-
-.skillImgHolder {
-	display: flex;
-	width: 45%;
-	height: 25%;
-	box-sizing: border-box;
-	margin: 2%;
-	border-bottom: 2px solid white;
-}
-
-.skillTitle {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.skillImg {
-	width: 50%;
-	height: auto;
-	margin: 1% 2%;
-}
-
-span {
-	color: white;
-}
-
-@media (max-width: 768px) {
-	.container {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		color: white;
-		font-size: 1.4rem;
-	}
-
-	.aboutmeWrapper {
-		margin: 2%;
-		width: 80%;
-	}
-
-	.paragraph {
-		border-radius: 15px;
-		padding: 3%;
-		margin: 4% 0% 10% 0%;
-	}
-
-	.skillImgWrapper {
-		border-radius: 15px;
-		margin-top: 2%;
-		text-align: center;
-	}
-
-	.skillImg {
-		width: 6%;
-		margin: 1% 2%;
-	}
-}
-
-@media (max-width: 390px) {
-	.container {
-		background-color: white;
-	}
-
-	.paragraph {
-		background-color: white;
-	}
-	.skillImgWrapper {
-	}
-
-	.skillImgHolder {
-		display: flex;
-		justify-content: center;
-		width: 100%;
-		padding: 32px 32px;
-	}
-
-	.skillImg {
-		display: none;
-	}
-
-	.stack {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	&.secondary {
+		background-color: transparent;
+		color: var(--tarmac);
+		border: 2px solid var(--tarmac);
 	}
 }
