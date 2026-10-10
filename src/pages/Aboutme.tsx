@@ -4,21 +4,19 @@ function Home() {
   return (
     <>
       <div className={Styles.container} id="home">
-        <div className={Styles.title}>These are some things about me!</div>
+        <div className={Styles.title}>
+          Hi, I'm Kevin, a software developer in Dublin.
+        </div>
         <div className={Styles.paragraph}>
-          Hello! My name is Kevin Glennon, a software engineer based in Dublin,
-          Ireland. For fun, I enjoy making websites and random programs. This is
-          where my interest in studying Computer Science came from and now here
-          I am!
-          <br />
-          Currently, I am a 3rd year student studying Computer Science at the
-          National College of Ireland. I am currently engaged in all aspects of
-          the course including coursework, projects and collaborative projects
-          with other students.
-          <br />I am pleased to say that I have a solid grounding in computer
-          science principles and practical skills. I have a considerable
-          proficiency in this field and am contiunally seeking opportunities to
-          enhance and broaden my skill set.
+          <p>
+            I'm a recent Computer Science graduate from the National College of
+            Ireland who's been building websites and small programs for fun for
+            years.
+          </p>
+          <p>
+            I'm now looking for my first frontend or full-stack developer role
+            in Dublin. Take a look at my projects below, or get in touch.
+          </p>
         </div>
         <div>
           <button className={Styles.button}>See the timetable</button>

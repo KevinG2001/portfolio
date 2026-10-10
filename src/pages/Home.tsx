@@ -22,7 +22,7 @@ function Home() {
         <ProjectsList />
       </Stop>
 
-      <Stop id="notes" label="Stop 04 · About/Notes">
+      <Stop id="notes" label="Stop 04 · Experience">
         <Notes />
       </Stop>
 
