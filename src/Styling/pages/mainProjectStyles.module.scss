@@ -1,92 +1,108 @@
 .projectContainer {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	font-size: 1.6rem;
-	color: white;
-}
-
-.ticketContainer {
-	display: flex;
-	flex-direction: column;
-	width: 25%;
-	font-size: 1.6rem;
-	color: var(--tarmac);
-	background-color: var(--ticket);
-	padding: 1%;
-	--notch: 14px;
-	--notch-y: calc(100% - 50px);
-	mask:
-		radial-gradient(circle var(--notch) at left var(--notch-y), #0000 98%, #000)
-			left / 51% 100% no-repeat,
-		radial-gradient(
-				circle var(--notch) at right var(--notch-y),
-				#0000 98%,
-				#000
-			)
-			right / 51% 100% no-repeat;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 1.6rem;
+  color: white;
 }
 
 .ticketList {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  width: 100%;
 }
 
-.projectImage {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 14px;
-	color: #3a3a40;
-	background: repeating-linear-gradient(
-		135deg,
-		#d6d3cb 0 10px,
-		#cdcac1 10px 20px
-	);
+.ticketContainer {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  flex-shrink: 0;
+  font-size: 1.6rem;
+  color: var(--tarmac);
+  background-color: var(--ticket);
+  padding: 12px;
+  --notch: 14px;
+  --notch-y: calc(100% - 50px);
+  mask:
+    radial-gradient(circle var(--notch) at left var(--notch-y), #0000 98%, #000)
+      left / 51% 100% no-repeat,
+    radial-gradient(
+        circle var(--notch) at right var(--notch-y),
+        #0000 98%,
+        #000
+      )
+      right / 51% 100% no-repeat;
 }
 
 .imageContainer {
-	height: 250px;
+  height: 250px;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  background: repeating-linear-gradient(
+    135deg,
+    #d6d3cb 0 10px,
+    #cdcac1 10px 20px
+  );
 }
 
 .ticketInfo {
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
-	align-items: center;
-	font-family: var(--font-sign);
-	font-size: 2rem;
-	margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sign);
+  font-size: 2rem;
+  margin-top: 8px;
 }
+
 .ticketId {
-	color: var(--led);
-	background-color: var(--tarmac);
-	padding: 4px 8px;
-	font-family: var(--font-display);
+  color: var(--led);
+  background-color: var(--tarmac);
+  padding: 4px 8px;
+  font-family: var(--font-display);
+}
+
+.ticketName {
+  overflow-wrap: anywhere;
 }
 
 .ticketDesc {
-	margin: 4% 0;
-	font-family: var(--font-body);
-	font-size: 1rem;
-}
-
-.rideButton {
-	border: none;
-	background: none;
-	font-family: var(--font-sign);
-	font-size: 1.25rem;
-	color: var(--stop-red);
-	padding: 8px 16px;
-	display: flex;
-	justify-content: space-between;
-	border-top: 2px dashed var(--tarmac);
-	cursor: pointer;
+  margin: 12px 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
 }
 
 .ticketStack {
-	margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  margin-bottom: 12px;
+}
+
+.stackTag {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border: 1px solid var(--tarmac);
+}
+
+.rideButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  border-top: 2px dashed var(--tarmac);
+  font-family: var(--font-sign);
+  font-size: 1.25rem;
+  color: var(--stop-red);
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
 }

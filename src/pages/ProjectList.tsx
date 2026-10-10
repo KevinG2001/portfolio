@@ -1,33 +1,6 @@
 import { Link } from "react-router-dom";
 import Styles from "../Styling/pages/projectList.module.scss";
-
-type Project = {
-  route: string;
-  name: string;
-  desc: string;
-  stack: string;
-  status: "Arrived" | "In service" | "Boarding" | "In depot";
-  link: string;
-};
-
-const projects: Project[] = [
-  {
-    route: "01",
-    name: "TrackItDown",
-    desc: "Lost and found management system for a gap I saw in work — my final year project.",
-    stack: "Full Stack",
-    status: "Arrived",
-    link: "/Projects/TrackItDown",
-  },
-  {
-    route: "02",
-    name: "Team Project",
-    desc: "A project made in my second year in a group of four, Made for helping you find meals/drinks based on your preferences.",
-    stack: "Full Stack",
-    status: "Arrived",
-    link: "/Projects/TeamProject",
-  },
-];
+import { projects } from "../data/projects";
 
 function Projects() {
   return (
@@ -54,7 +27,7 @@ function Projects() {
           </thead>
           <tbody>
             {projects.map((p) => (
-              <tr key={p.route}>
+              <tr key={p.slug}>
                 <td className={`${Styles.projectListCell} ${Styles.routeCell}`}>
                   {p.route}
                 </td>
@@ -62,16 +35,21 @@ function Projects() {
                   className={`${Styles.projectListCell} ${Styles.serviceCell}`}
                 >
                   <div className={Styles.projectTitleWrapper}>
-                    <Link to={p.link} className={Styles.projectName}>
+                    <Link
+                      to={`/projects/${p.slug}`}
+                      className={Styles.projectName}
+                    >
                       {p.name}
                     </Link>
-                    <span className={Styles.projectDesc}>{p.desc}</span>
+                    <span className={Styles.projectDesc}>
+                      {p.shortDescription}
+                    </span>
                   </div>
                 </td>
                 <td
                   className={`${Styles.projectListCell} ${Styles.callingAtCell}`}
                 >
-                  {p.stack}
+                  {p.stack.join(" · ")}
                 </td>
                 <td
                   className={`${Styles.projectListCell} ${Styles.statusCell}`}
