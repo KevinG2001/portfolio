@@ -1,0 +1,272 @@
+.projectContainer {
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 32px 32px 96px;
+	font-family: var(--font-sign);
+	color: var(--tarmac);
+}
+
+.backLink {
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
+	font-family: var(--font-body);
+	font-weight: 700;
+	font-size: 17px;
+	color: var(--tarmac);
+	text-decoration: none;
+
+	&:hover {
+		color: var(--stop-red);
+	}
+}
+
+.projectTitle {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	gap: 16px 40px;
+	padding: 24px 0 32px;
+}
+
+.projectRoute {
+	font-family: var(--font-display);
+	font-weight: 900;
+	font-size: clamp(96px, 14vw, 200px);
+	line-height: 0.8;
+	color: var(--led);
+}
+
+.projectHeader {
+	flex: 1 1 480px;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.projectHeaderTitle {
+	margin: 0;
+	font-family: var(--font-sign);
+	font-weight: 900;
+	font-size: clamp(56px, 8vw, 120px);
+	line-height: 0.86;
+	text-transform: uppercase;
+}
+
+.projectShortDescription {
+	margin: 0;
+	max-width: 640px;
+	font-family: var(--font-body);
+	font-size: 21px;
+	line-height: 1.5;
+}
+
+.projectMeta {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+	margin: 0 0 24px;
+	border-top: 4px solid var(--tarmac);
+	border-bottom: 1px solid #bebbb2;
+}
+
+.projectMetaItem {
+	padding: 16px 20px 16px 0;
+}
+
+.projectMetaLabel {
+	font-family: var(--font-sign);
+	font-weight: 800;
+	font-size: 15px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--kerb);
+}
+
+.projectMetaValue {
+	margin: 4px 0 0;
+	font-family: var(--font-body);
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.projectLinks {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-bottom: 24px;
+}
+
+.projectLink {
+	display: inline-flex;
+	align-items: center;
+	min-height: 48px;
+	padding: 0 20px;
+	border: 3px solid var(--tarmac);
+	color: var(--tarmac);
+	text-decoration: none;
+	font-family: var(--font-sign);
+	font-weight: 800;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+	&:hover {
+		background: var(--tarmac);
+		color: var(--ticket);
+	}
+}
+
+.imageContainer {
+	height: 420px;
+}
+
+.projectImage {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	background: repeating-linear-gradient(
+		135deg,
+		#d6d3cb 0 10px,
+		#cdcac1 10px 20px
+	);
+}
+
+.projectDescription {
+	max-width: 720px;
+	margin: 40px 0;
+	font-family: var(--font-body);
+	font-size: 19px;
+	line-height: 1.6;
+}
+
+.journey {
+	padding: 16px 0 48px;
+}
+
+.sectionLabel {
+	margin: 0 0 24px;
+	font-family: var(--font-sign);
+	font-weight: 800;
+	font-size: 20px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: var(--kerb);
+}
+
+.journeyRow {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px 56px;
+}
+
+.journeyTitle {
+	flex: 1 1 280px;
+	margin: 0;
+	font-family: var(--font-sign);
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 0.95;
+	text-transform: uppercase;
+}
+
+.journeyBody {
+	flex: 2 1 420px;
+	margin: 0;
+	font-family: var(--font-body);
+	font-size: 19px;
+	line-height: 1.6;
+}
+
+.projectDisplayBoard {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+	gap: 4px 24px;
+	padding: 28px;
+	background-color: var(--housing);
+}
+
+.projectDisplayItem {
+	display: flex;
+	align-items: baseline;
+	gap: 14px;
+	padding: 12px 0;
+	border-bottom: 1px solid #2a2a30;
+}
+
+.projectDisplayRoute {
+	font-family: var(--font-display);
+	font-weight: 900;
+	font-size: 18px;
+	color: var(--led);
+}
+
+.projectDisplayInfo {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.projectDisplayName {
+	font-family: var(--font-body);
+	font-weight: 700;
+	font-size: 17px;
+	color: var(--ticket);
+}
+
+.projectDisplayDes {
+	font-family: var(--font-body);
+	font-size: 14px;
+	color: #b9b9c0;
+}
+
+.projectNext {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin-top: 64px;
+	padding: 36px 40px;
+	background-color: var(--stop-red);
+	color: #ffffff;
+	text-decoration: none;
+
+	&:hover {
+		background-color: #9e270a;
+	}
+}
+
+.projectNextStop {
+	font-family: var(--font-sign);
+	font-weight: 800;
+	font-size: 18px;
+	letter-spacing: 3px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.projectNextName {
+	font-family: var(--font-sign);
+	font-weight: 900;
+	font-size: clamp(40px, 5vw, 72px);
+	line-height: 0.9;
+	text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+	.projectContainer {
+		padding: 24px 20px 64px;
+	}
+
+	.imageContainer {
+		height: 240px;
+	}
+
+	.journeyTitle {
+		font-size: 34px;
+	}
+
+	.projectNext {
+		padding: 28px 24px;
+	}
+}

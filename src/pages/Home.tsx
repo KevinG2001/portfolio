@@ -1,7 +1,6 @@
 import styles from "../Styling/pages/homeStyles.module.scss";
 import AboutMe from "./Aboutme";
 import ProjectsList from "./ProjectList";
-import ContactMe from "./ContactMe";
 import Stop from "../components/Stop";
 import MainProjects from "./MainProjects";
 import Notes from "./Notes";

@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Aboutme from "./pages/Aboutme";
 import Navbar from "./components/global/Navbar";
-import Projects from "./pages/ProjectList";
 import ContactMe from "./pages/ContactMe";
 import Home from "./pages/Home";
 import Sidebar from "./components/global/Sidebar";
@@ -12,6 +11,7 @@ import HairsalonProject from "./components/Projects/HairsalonProject";
 import Teamproject from "./components/Projects/Teamproject";
 import WeatherWebsite from "./components/Projects/WeatherWebsite";
 import PasswordManager from "./components/Projects/PasswordManager";
+import ProjectOverview from "./pages/ProjectOverview";
 
 function App() {
 	const [showButton, setShowButton] = useState(false);
@@ -57,7 +57,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/About" element={<Aboutme />} />
-					<Route path="/Projects" element={<Projects />} />
+					<Route path="/projects/:slug" element={<ProjectOverview />} />
 					<Route path="/Contact" element={<ContactMe />} />
 					<Route path="/Projects/HairSalon" element={<HairsalonProject />} />
 					<Route path="/Projects/TeamProject" element={<Teamproject />} />
