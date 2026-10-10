@@ -1,41 +1,89 @@
+$breakpoint: 1200px;
+
 .navContainer {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	height: 100px;
-	background-color: var(--housing);
-	color: white;
-	align-items: center;
-	z-index: 998;
-	font-family: var(--font-sign);
-	font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  background-color: var(--housing);
+  color: white;
+  align-items: center;
+  z-index: 998;
+  font-family: var(--font-sign);
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.navBurger {
+  display: none; // hidden on desktop
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 1rem;
 }
 
 .navBadge {
-	color: var(--led);
-	font-family: var(--font-display);
-	font-size: 3rem;
-	border: 2px solid var(--led);
-	margin: 0 1rem;
+  color: var(--led);
+  font-family: var(--font-display);
+  font-size: 3rem;
+  border: 2px solid var(--led);
+  margin: 0 1rem;
 }
 
 .navSign {
-	background-color: var(--tarmac);
-	font-family: var(--font-display);
-	width: 80%;
-	height: 60%;
-	display: flex;
-	align-items: center;
-	font-size: 2rem;
-	padding: 0 1rem;
-	color: var(--led);
+  background-color: var(--tarmac);
+  font-family: var(--font-display);
+  width: 80%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  padding: 0 1rem;
+  color: var(--led);
 }
 
 .navLinks {
-	display: flex;
-	margin: 0 1rem;
+  display: flex;
+  margin: 0 1rem;
 }
 
 .navLink {
-	margin: 0 1rem;
+  margin: 0 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: $breakpoint) {
+  .navBurger {
+    display: block;
+  }
+
+  .navSign {
+    width: 60%;
+  }
+
+  .navLinks {
+    display: none;
+    position: absolute;
+    top: 100%; // starts right below the navbar
+    left: 0;
+    right: 0; // full width
+    margin: 0;
+    flex-direction: column;
+    background-color: var(--housing);
+    z-index: 999;
+    padding: 1rem 0;
+
+    &.navLinksOpen {
+      display: flex;
+    }
+  }
+
+  .navLink {
+    margin: 0;
+    padding: 1rem 2rem;
+  }
 }
