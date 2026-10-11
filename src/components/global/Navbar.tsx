@@ -29,20 +29,20 @@ function Navbar() {
 			<div
 				className={`${navStyles.navLinks} ${open ? navStyles.navLinksOpen : ""}`}
 			>
-				<a href="#home" className={navStyles.navLink} onClick={closeMenu}>
+				<a href="/#home" className={navStyles.navLink} onClick={closeMenu}>
 					Home
 				</a>
 				<a
-					href="#mainprojects"
+					href="/#mainprojects"
 					className={navStyles.navLink}
 					onClick={closeMenu}
 				>
 					Main Projects
 				</a>
-				<a href="#projects" className={navStyles.navLink} onClick={closeMenu}>
+				<a href="/#projects" className={navStyles.navLink} onClick={closeMenu}>
 					Projects
 				</a>
-				<a href="#notes" className={navStyles.navLink} onClick={closeMenu}>
+				<a href="/#notes" className={navStyles.navLink} onClick={closeMenu}>
 					About
 				</a>
 			</div>
