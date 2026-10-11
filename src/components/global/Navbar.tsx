@@ -42,7 +42,7 @@ function Navbar() {
 				<a href="#projects" className={navStyles.navLink} onClick={closeMenu}>
 					Projects
 				</a>
-				<a href="#about" className={navStyles.navLink} onClick={closeMenu}>
+				<a href="#notes" className={navStyles.navLink} onClick={closeMenu}>
 					About
 				</a>
 			</div>

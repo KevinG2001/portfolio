@@ -20,14 +20,37 @@ function FinalTicket() {
 						opportunity, based in Dublin!
 					</p>
 
-					<div className={styles.finalTicketEmail}>
+					<a
+						href="mailto:kevinglennon01@gmail.com"
+						className={styles.finalTicketEmail}
+					>
 						kevinglennon01@gmail.com
-					</div>
+					</a>
 
 					<div className={styles.finalTicketButtons}>
-						<button className={styles.finalTicketButton}>GitHub</button>
-						<button className={styles.finalTicketButton}>LinkedIn</button>
-						<button className={styles.finalTicketButton}>Download CV</button>
+						<a
+							href="https://github.com/KevinG2001"
+							target="_blank"
+							rel="noopener noreferrer"
+							className={styles.finalTicketButton}
+						>
+							GitHub
+						</a>
+						<a
+							href="https://www.linkedin.com/in/kevinglennon01/"
+							target="_blank"
+							rel="noopener noreferrer"
+							className={styles.finalTicketButton}
+						>
+							LinkedIn
+						</a>
+						<a
+							href="/Kevin-Glennon-CV.pdf"
+							download
+							className={styles.finalTicketButton}
+						>
+							Download CV
+						</a>
 					</div>
 				</div>
 

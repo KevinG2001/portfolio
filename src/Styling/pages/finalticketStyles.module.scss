@@ -80,11 +80,20 @@
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	cursor: pointer;
+	display: flex;
+	text-decoration: none;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 
 	&:hover {
 		background: var(--tarmac);
 		color: var(--ticket);
 	}
+}
+
+.finalTicketEmail {
+	text-decoration: none;
 }
 
 .finalTicketStub {
