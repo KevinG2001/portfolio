@@ -1,4 +1,4 @@
-export type Status = "ARRIVED" | "IN SERVICE" | "BOARDING" | "IN DEPOT";
+export type Status = "ARRIVED" | "IN SERVICE" | "BOARDING" | "En Route";
 
 export type ProjectLinks = {
 	repo: string | null;
@@ -97,6 +97,67 @@ export const projects: Project[] = [
 				name: "Nodemailer",
 				role: "Tells passengers when an item matches.",
 			},
+		],
+	},
+	{
+		slug: "selfhealth",
+		route: "02",
+		name: "SelfHealth",
+		status: "En Route",
+		stack: ["React", "TypeScript", "Node.js", "PostgreSQL", "Docker"],
+		shortDescription:
+			"A self-hosted health app for tracking food, workouts and journalling in one place.",
+		description:
+			"SelfHealth is a self-hosted app that helps people stay on top of their own health. Users can track calories and macros against their own weight goals, log workouts with sets, reps and rest times, build workout templates from an exercise library, and journal about their day. It's built to run on a homelab, so your health data stays on your own hardware.",
+		image: "/images/projects/selfhealth.png",
+		featured: true,
+		links: {
+			repo: null,
+			live: null,
+			demo: null,
+		},
+		meta: [
+			{ label: "Role", value: "Solo — design, build, testing" },
+			{ label: "Status", value: "Work in progress" },
+			{
+				label: "Context",
+				value: "Personal project — an app I wanted to use myself",
+			},
+			{ label: "Core", value: "React · Express · PostgreSQL" },
+		],
+		journey: [
+			{
+				title: "Why it exists",
+				body: "While I was getting fit, I noticed most health apps were always missing something. One was great for food, another for workouts, but none did it all. So I decided to build my own that combines the best parts of each, with a few ideas of my own.",
+			},
+			{
+				title: "What it does",
+				body: "It brings food, training and journalling into one place, so users can manage their health themselves and stay accountable. Because it's self-hosted, the data never leaves your own server.",
+			},
+			{
+				title: "How it's built",
+				body: "It's a TypeScript monorepo. A React frontend talks to an Express REST API, which stores everything in PostgreSQL. A shared package holds the types and API calls, so a future mobile app can reuse them instead of duplicating work. The whole stack runs with Docker Compose, so self-hosting is just clone, fill in the .env, and docker compose up.",
+			},
+			{
+				title: "Things that bit",
+				body: "Figuring out the best way to develop a web app and a mobile app, As I have never done it, its a bit of a learning curve so I am trying to get a consistent design accross both and trying to make it stuff as reusable as possible",
+			},
+			{
+				title: "What I'd do next",
+				body: "I have a lot of ideas to add once I get the time. The big one is item recognition: take a photo of your food and it fills out the nutritional values for you, so you only need to double-check it. After that, a React Native mobile app that connects to your own server.",
+			},
+		],
+		callingAt: [
+			{ name: "React", role: "Card-based web dashboard" },
+			{ name: "MUI", role: "Component library for the web UI" },
+			{ name: "Express", role: "REST API for workouts, nutrition and journal" },
+			{ name: "PostgreSQL", role: "Multi-user data storage" },
+			{ name: "JWT", role: "Multi-user authentication" },
+			{
+				name: "Shared package",
+				role: "Types and API calls reused across frontends",
+			},
+			{ name: "Docker Compose", role: "One-command self-hosting" },
 		],
 	},
 ];
