@@ -36,6 +36,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repo
@@ -50,7 +52,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4 # Updated to v4
         with:
-          github_token: ${{ secrets.TOKEN_PAGES }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages # This ensures the files are pushed to gh-pages branch
           force_orphan: true # Forces the push to the gh-pages branch
